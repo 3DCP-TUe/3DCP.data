@@ -4,7 +4,7 @@ This folder contains files to perform analysis over a session and data record. T
 
 ## Explanation of the files and folders
 
-- **[lib](lib):** This folder contains a collection of standard utility functions for analyzing sessions and preparing data records within the DFC.data framework.
+- **[lib](lib):** This folder contains a collection of standard utility functions for analyzing sessions and preparing data records within the 3DCP.data framework.
 - **[check_file_formats.m](check_file_formats.m):** Example script to check that processed experimental data is correctly formatted by verifying that required files exist and contain all necessary columns.
 - **[record_update_libs.m](record_update_libs.m):** Example script that can be used to update/replace all lib folders in a data record.
 - **[record_fill_system_components_folders.m](record_fill_system_components_folders.m):** Example script that fills all system component folders in the system data of every session within a data record.

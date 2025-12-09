@@ -1,8 +1,8 @@
-# DFC.data
+# 3DCP.data
 
 ## Introduction 
 
-This repository contains the templates, libraries, and structure information for _DFC.data - A database framework for Digital Fabrication with Concrete_. The aim of this project is to collect experimental data about Digital Fabrication with Concrete processes in a structured way and distribute this data to the community. This repository includes the component libraries of the equipment and materials at TU/e and the templates for data records and software packages.
+This repository contains the templates, libraries, and structure information for _3DCP.data - A database framework for 3D concrete printing_. The aim of this project is to collect experimental data 3D concrete printing processes in a structured way and distribute this data to the community. This repository includes the component libraries of the equipment and materials at TU/e and the templates for data records and software packages.
 
 An overview of all available data records that follow this framework can be found [here](docs/available_data_records.md).
 
@@ -61,7 +61,7 @@ Since it took a lot of time and effort to make our data and software available, 
 
 ### Documentation
 
-The documentation of DFC.data is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
+The documentation of 3DCP.data is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
 
 Copyright (c) 2024-2025 [3D Concrete Printing Research Group at Eindhoven University of Technology](https://www.tue.nl/en/research/research-groups/structural-engineering-and-design/3d-concrete-printing)
 
@@ -83,11 +83,11 @@ The software components are licensed under the GNU General Public License versio
 
 Copyright (c) 2024-2025 [3D Concrete Printing Research Group at Eindhoven University of Technology](https://www.tue.nl/en/research/research-groups/structural-engineering-and-design/3d-concrete-printing)
 
-DFC.data contains free software; you can redistribute it and/or modify it under the terms of the GNU General Public License version 3.0 as published by the Free Software Foundation. 
+3DCP.data contains free software; you can redistribute it and/or modify it under the terms of the GNU General Public License version 3.0 as published by the Free Software Foundation. 
 
 The software components are distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-You should have received a copy of the GNU General Public License along with DFC.data; If not, see <http://www.gnu.org/licenses/>.
+You should have received a copy of the GNU General Public License along with 3DCP.data; If not, see <http://www.gnu.org/licenses/>.
 
 @license GPL-3.0 <https://www.gnu.org/licenses/gpl-3.0.html>
 

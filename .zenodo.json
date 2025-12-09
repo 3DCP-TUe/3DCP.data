@@ -19,9 +19,9 @@
 
 	"license": "CC-BY-SA-4.0",
 
-	"title": "DFC.data: A database framework for digital fabrication with concrete.",
+	"title": "3DCP.data: A database framework for 3D concrete printing",
 
-	"description": "This record contains the template and setup information library for DFC.data. The aim of this project is to collect experimental data about 3D concrete printing in a structured way and distribute this data to the community. This record includes the system library of the equipment at TU/e and the templates for data records and software packages.",
+	"description": "This record contains the template and setup information library for 3DCP.data. The aim of this project is to collect experimental data about 3D concrete printing in a structured way and distribute this data to the community. This record includes the system library of the equipment at TU/e and the templates for data records and software packages.",
 
 	"keywords": [
 		"3d concrete printing",

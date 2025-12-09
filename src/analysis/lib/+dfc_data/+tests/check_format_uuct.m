@@ -1,6 +1,6 @@
 % SPDX-License-Identifier: GPL-3.0-or-later
-% DFC.data
-% Project: https://github.com/3DCP-TUe/DFC.data
+% 3DCP.data
+% Project: https://github.com/3DCP-TUe/3DCP.data
 %
 % Copyright (c) 2025 Eindhoven University of Technology
 %

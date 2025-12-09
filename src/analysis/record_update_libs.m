@@ -1,6 +1,6 @@
 % SPDX-License-Identifier: GPL-3.0-or-later
-% DFC.data
-% Project: https://github.com/3DCP-TUe/DFC.data
+% 3DCP.data
+% Project: https://github.com/3DCP-TUe/3DCP.data
 %
 % Copyright (c) 2024-2025 Eindhoven University of Technology
 %
@@ -27,7 +27,7 @@ addpath('lib');
 % Directory of library
 %library = uigetdir(); % Open a dialog to select the folder
 %library = 'D:\OneDrive - TU Eindhoven\Paper - Indentation test - clean\fem\flat punch\lib\+indent';
-%library = 'D:\GitHub\DFC.data\src\analysis\lib\+dfc_data';
+%library = 'D:\GitHub\3DCP.data\src\analysis\lib\+dfc_data';
 %library = 'D:\GitHub\ConcreteCandyTracker\src\analysis\lib\+candy';
 library = 'D:\GitHub\Node-RED-3DSeeP\src\analysis\lib\+nr3dseep';
 
