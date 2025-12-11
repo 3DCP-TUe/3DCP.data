@@ -25,6 +25,7 @@ The `processed_data` folder contains at least the following files:
 | deposition_date               | yyyy-MM-dd |
 | deposition_time_start         | HH:mm:ss   |
 | deposition_time_end           | HH:mm:ss   |
+| insertion_time                | HH:mm:ss   |
 | testing_date                  | yyyy-MM-dd |
 | testing_time_start            | HH:mm:ss   |
 | vane_diameter                 | mm         |
