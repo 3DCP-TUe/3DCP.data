@@ -28,7 +28,7 @@ function result = read_system_component_metadata(folder, component)
 %
 % Notes:
 %   - The function expects the file <folder>\<component>\metadata.yml to exist.
-%   - Parsing is performed with dfc_data.readyaml.
+%   - Parsing is performed with framework_toolkit.readyaml.
 %
 % Example:
 %   metadata = read_system_component_metadata('C:\lib', 'motorA');
@@ -45,5 +45,5 @@ function result = read_system_component_metadata(folder, component)
     end
 
     % Read and return the YAML content
-    result = dfc_data.readyaml(metadata_path);
+    result = framework_toolkit.readyaml(metadata_path);
 end

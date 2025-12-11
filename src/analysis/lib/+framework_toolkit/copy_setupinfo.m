@@ -34,7 +34,7 @@ function copy_setupinfo(root, destination, components, swipe_destination)
 %   (none)
 %
 % Notes:
-%   - The function relies on `dfc_data.get_components_from_folder` to 
+%   - The function relies on `framework_toolkit.get_components_from_folder` to 
 %     retrieve available components in the library.
 %   - If one or more requested components are not found in the library, 
 %     an error is thrown.
@@ -51,7 +51,7 @@ function copy_setupinfo(root, destination, components, swipe_destination)
 %------------- BEGIN CODE --------------
 
     % Get all component names and their folders from the library
-    [lib_names, lib_folders] = dfc_data.get_components_from_folder(root);
+    [lib_names, lib_folders] = framework_toolkit.get_components_from_folder(root);
 
     % Match requested components to library components
     indices = zeros(size(components));

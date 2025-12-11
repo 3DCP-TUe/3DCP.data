@@ -56,7 +56,7 @@ function check_format_uuct(folder)
 %   width                    | mm
 %
 % Example:
-%   check_format_uuct('C:\dfc_data\data_records\record_1\20251016_session_1\uuct');
+%   check_format_uuct('C:\framework_toolkit\data_records\record_1\20251016_session_1\uuct');
 %   % Validates overview.csv and all referenced sample files.
 %
 %------------- BEGIN CODE --------------

@@ -36,7 +36,7 @@ end
 % if all files exists and contain the required columns.
 % A provided folder can contain multiple data records, or
 % you can just select one data record, or an individual session.
-dfc_data.tests.check_format(folder)
+framework_toolkit.tests.check_format(folder)
 
 %% End
 disp('End')

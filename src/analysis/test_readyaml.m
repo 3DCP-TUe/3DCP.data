@@ -27,7 +27,7 @@ addpath('lib');
 cd(filepath)
 cd("..\template\yyyymmdd_session_1\tracer_experiment\setupinfo")
 file = pwd + "\metadata.yml";
-yml = dfc_data.readyaml(file);
+yml = framework_toolkit.readyaml(file);
 fields = fieldnames(yml.software_settings.white_balance_ratio);
 
 for i = 1:numel(fields)

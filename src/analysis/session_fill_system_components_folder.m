@@ -37,11 +37,11 @@ destination = pwd;
 % Get components from record
 cd(filepath);
 cd('../template/yyyymmdd_session_1')
-metadata = dfc_data.readyaml(pwd + "\system_data\setupinfo\metadata.yml");
-components = dfc_data.get_system_components_from_system_metadata(metadata);
+metadata = framework_toolkit.readyaml(pwd + "\system_data\setupinfo\metadata.yml");
+components = framework_toolkit.get_system_components_from_system_metadata(metadata);
 
 % Copy used components to destination folder
-dfc_data.copy_setupinfo(library, destination, components, true);
+framework_toolkit.copy_setupinfo(library, destination, components, true);
 
 %% End
 disp('End')

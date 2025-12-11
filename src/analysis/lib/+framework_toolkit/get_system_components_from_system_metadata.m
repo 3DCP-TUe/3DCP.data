@@ -35,7 +35,7 @@ function components = get_system_components_from_system_metadata(metadata)
 %   - Duplicate component names are automatically removed.
 %
 % Example:
-%   metadata = dfc_data.readyaml('session_metadata.yml');
+%   metadata = framework_toolkit.readyaml('session_metadata.yml');
 %   components = get_system_components_from_system_metadata(metadata)
 %   % Returns the unique system component names defined in the session.
 

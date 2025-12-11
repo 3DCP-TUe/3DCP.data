@@ -28,10 +28,10 @@ addpath('lib');
 cd(filepath);
 cd('../template/yyyymmdd_session_1/system_data/setupinfo')
 folder = pwd;
-metadata = dfc_data.readyaml(folder + "/metadata.yml");
+metadata = framework_toolkit.readyaml(folder + "/metadata.yml");
 
 % Get graph and figure
-[graph, fig] = dfc_data.get_system_ontology(metadata);
+[graph, fig] = framework_toolkit.get_system_ontology(metadata);
 
 %% End
 disp('End')

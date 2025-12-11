@@ -33,7 +33,7 @@ function [graph, fig] = get_system_ontology(metadata)
 %   - If called with only one output, no figure is plotted.
 %
 % Example:
-%   metadata = dfc_data.readyaml('session_metadata.yml');
+%   metadata = framework_toolkit.readyaml('session_metadata.yml');
 %   [G, fig] = get_system_ontology(metadata);
 
 %------------- BEGIN CODE --------------

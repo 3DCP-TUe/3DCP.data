@@ -32,7 +32,7 @@ setupinfo = pwd;
 % Read session metadata file
 cd(filepath);
 cd('../template/yyyymmdd_session_1/')
-metadata = dfc_data.readyaml(pwd + "/system_data/setupinfo/metadata.yml");
+metadata = framework_toolkit.readyaml(pwd + "/system_data/setupinfo/metadata.yml");
 
 %% Check IO
 

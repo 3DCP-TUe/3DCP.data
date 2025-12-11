@@ -53,7 +53,7 @@ function check_format_uwtt(folder)
 %   temperature              | °C
 %
 % Example:
-%   check_format_uwtt('C:\dfc_data\data_records\record_1\20251016_session_1\uwtt');
+%   check_format_uwtt('C:\framework_toolkit\data_records\record_1\20251016_session_1\uwtt');
 %
 %------------- BEGIN CODE --------------
 

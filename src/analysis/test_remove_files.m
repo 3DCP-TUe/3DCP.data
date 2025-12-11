@@ -32,7 +32,7 @@ if folder == 0
 end
 
 % Remove files with extension '.asv'
-dfc_data.remove_files_by_extension(folder, '.asv');
+framework_toolkit.remove_files_by_extension(folder, '.asv');
 
 %% End
 disp('End')

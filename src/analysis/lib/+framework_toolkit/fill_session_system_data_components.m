@@ -32,10 +32,10 @@ function fill_session_system_data_components(library, folder, subfolder, swipe_d
 % Notes:
 %   - The session folder must contain a metadata file located at `system_data/setupinfo/metadata.yml`.
 %   - Components are determined by parsing the metadata:
-%       - For "system", uses `dfc_data.get_system_components_from_system_metadata`.
-%       - For "materials", uses `dfc_data.get_material_components_from_system_metadata`.
+%       - For "system", uses `framework_toolkit.get_system_components_from_system_metadata`.
+%       - For "materials", uses `framework_toolkit.get_material_components_from_system_metadata`.
 %   - If the metadata file does not exist, an error is thrown.
-%   - Actual copying is handled by `dfc_data.copy_setupinfo`.
+%   - Actual copying is handled by `framework_toolkit.copy_setupinfo`.
 %
 % Example:
 %   fill_session_system_data_components('C:\lib', ...
@@ -62,20 +62,20 @@ function fill_session_system_data_components(library, folder, subfolder, swipe_d
     end
 
     % Read system metadata
-    metadata = dfc_data.readyaml(metadata_file);
+    metadata = framework_toolkit.readyaml(metadata_file);
 
     % Extract components based on subfolder type
     switch lower(subfolder)
         case "system"
-            components = dfc_data.get_system_components_from_system_metadata(metadata);
+            components = framework_toolkit.get_system_components_from_system_metadata(metadata);
             destination = fullfile(path, 'system_data', 'setupinfo', 'system_components');
         case "materials"
-            components = dfc_data.get_material_components_from_system_metadata(metadata);
+            components = framework_toolkit.get_material_components_from_system_metadata(metadata);
             destination = fullfile(path, 'system_data', 'setupinfo', 'material_components');
         otherwise
             error('Invalid input: subfolder must be "system" or "materials".');
     end
 
     % Copy setupinfo for used components
-    dfc_data.copy_setupinfo(library, destination, components, swipe_destination);
+    framework_toolkit.copy_setupinfo(library, destination, components, swipe_destination);
 end

@@ -32,7 +32,7 @@ function components = get_material_components_from_system_metadata(metadata)
 %   - Duplicate component names are removed automatically.
 %
 % Example:
-%   metadata = dfc_data.readyaml('session_metadata.yml');
+%   metadata = framework_toolkit.readyaml('session_metadata.yml');
 %   components = get_material_components_from_system_metadata(metadata)
 %   % Returns the unique material component names defined in the session.
 

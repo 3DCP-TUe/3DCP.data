@@ -51,7 +51,7 @@ if record == 0
 end
 
 % Fil the setupinfo of the session system_data folders
-dfc_data.fill_record_system_data_components(library, record, 'system', true); % use 'system' for system components and 'material' for material components
+framework_toolkit.fill_record_system_data_components(library, record, 'system', true); % use 'system' for system components and 'material' for material components
 
 %% End
 disp('End')

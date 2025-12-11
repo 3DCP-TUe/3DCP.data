@@ -27,7 +27,7 @@ addpath('lib');
 % Directory of library
 %library = uigetdir(); % Open a dialog to select the folder
 %library = 'D:\OneDrive - TU Eindhoven\Paper - Indentation test - clean\fem\flat punch\lib\+indent';
-%library = 'D:\GitHub\3DCP.data\src\analysis\lib\+dfc_data';
+%library = 'D:\GitHub\3DCP.data\src\analysis\lib\+framework_toolkit';
 %library = 'D:\GitHub\ConcreteCandyTracker\src\analysis\lib\+candy';
 library = 'D:\GitHub\Node-RED-3DSeeP\src\analysis\lib\+nr3dseep';
 
@@ -36,7 +36,7 @@ library = 'D:\GitHub\Node-RED-3DSeeP\src\analysis\lib\+nr3dseep';
 record = 'D:\OneDrive - TU Eindhoven\99_Project Vivaldi\05 Data records' ;
 
 % Apply
-dfc_data.copy_to_matching_folders(library, record, true)
+framework_toolkit.copy_to_matching_folders(library, record, true)
 
 %% End
 disp('End')

@@ -61,7 +61,7 @@ function remove_files_by_extension(folder, extension)
 
         if items(i).isdir
             % Recurse into subfolder
-            dfc_data.remove_files_by_extension(item_path, extension);
+            framework_toolkit.remove_files_by_extension(item_path, extension);
         else
             % Check extension
             [~, ~, ext] = fileparts(name);

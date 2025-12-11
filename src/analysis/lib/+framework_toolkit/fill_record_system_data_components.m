@@ -33,7 +33,7 @@ function fill_record_system_data_components(library, folder, subfolder, swipe_de
 %   - If `folder` is a struct (from `dir`), the path is extracted from the first entry.
 %   - An error is thrown if the provided folder does not exist or if the input type is invalid.
 %   - Only subfolders containing "session" in their name are processed.
-%   - The actual population of components is handled by `dfc_data.fill_session_system_data_components`.
+%   - The actual population of components is handled by `framework_toolkit.fill_session_system_data_components`.
 %
 % Example:
 %   fill_record_system_data_components('C:\lib', 'C:\records', 'system', true)
@@ -64,7 +64,7 @@ function fill_record_system_data_components(library, folder, subfolder, swipe_de
 
         % Check for session folders
         if subfolders(i).isdir && contains(name, 'session')
-            dfc_data.fill_session_system_data_components(library, full_path, subfolder, swipe_destination);
+            framework_toolkit.fill_session_system_data_components(library, full_path, subfolder, swipe_destination);
         end
     end
 end
