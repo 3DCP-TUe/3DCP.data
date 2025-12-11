@@ -10,3 +10,7 @@ attr:
       institution: Eindhoven University of Technology (TU/e)
   note: Experiment to study the correlation between pressure and temperature
   date: 2024-08-05
+  location:
+    name: Structures Lab at Eindhoven University of Technology
+    country: Netherlands
+    city: Eindhoven
