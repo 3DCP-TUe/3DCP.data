@@ -33,7 +33,7 @@ data_sources:
     subfolders:
       - name: "processed_data"
         files:
-          - file: "mass_flow.csv"
+          - name: "mass_flow.csv"
             optional: false
             columns:
               deposition_time_start:
@@ -63,7 +63,7 @@ data_sources:
     subfolders:
       - name: "processed_data"
         files:
-          - file: "yield_stress.csv"
+          - name: "yield_stress.csv"
             optional: false
             columns:
               time:
@@ -78,7 +78,7 @@ data_sources:
                 description: "Corresponding yield stress"
                 unit: "kPa"
                 optional: false
-          - file: "mass_flow.csv"
+          - name: "mass_flow.csv"
             optional: false
             columns:
               deposition_time_start:
@@ -97,7 +97,7 @@ data_sources:
                 description: "Mass flow over the time window"
                 unit: "kg/min"
                 optional: false
-          - file: "volumes.csv"
+          - name: "volumes.csv"
             optional: true
             columns:
               time:
@@ -108,7 +108,7 @@ data_sources:
                 description: "Individual droplet volume"
                 unit: "cm³"
                 optional: false
-          - file: "volumes_grouped.csv"
+          - name: "volumes_grouped.csv"
             optional: true
             columns:
               time:
@@ -123,7 +123,7 @@ data_sources:
                 description: "Standard deviation of droplet volume"
                 unit: "cm³"
                 optional: false
-          - file: "volumetric_flow.csv"
+          - name: "volumetric_flow.csv"
             optional: true
             columns:
               deposition_time_start:
@@ -153,7 +153,7 @@ data_sources:
     subfolders:
       - name: "processed_data"
         files:
-          - file: "color_values.csv"
+          - name: "color_values.csv"
             optional: false
             columns:
               time:
@@ -196,7 +196,7 @@ data_sources:
                 description: "b* value (CIELAB color space)"
                 unit: ""
                 optional: false
-          - file: "overview.csv"
+          - name: "overview.csv"
             optional: false
             columns:
               experiment:
@@ -273,7 +273,7 @@ data_sources:
                 description: "99th percentile of residence time"
                 unit: "HH:mm:ss"
                 optional: false
-          - file: "response_data.csv"
+          - name: "response_data.csv"
             optional: false
             columns:
               time:
@@ -335,7 +335,7 @@ data_sources:
     subfolders:
       - name: "processed_data"
         files:
-          - file: "overview.csv"
+          - name: "overview.csv"
             optional: false
             columns:
               deposition_date:
@@ -397,7 +397,7 @@ data_sources:
     subfolders:
       - name: "processed_data"
         files:
-          - file: "overview.csv"
+          - name: "overview.csv"
             optional: false
             columns:
               deposition_date:
@@ -450,7 +450,7 @@ data_sources:
                 description: "Derived friction angle from the indentation"
                 unit: "degrees"
                 optional: false
-          - file: "sample_i.csv"
+          - name: "sample_i.csv"
             optional: false
             columns:
               time:
@@ -477,7 +477,7 @@ data_sources:
     subfolders:
       - name: "processed_data"
         files:
-          - file: "overview.csv"
+          - name: "overview.csv"
             optional: false
             columns:
               deposition_date:
@@ -531,7 +531,7 @@ data_sources:
     subfolders:
       - name: "processed_data"
         files:
-          - file: "overview.csv"
+          - name: "overview.csv"
             optional: false
             columns:
               deposition_date:
@@ -572,7 +572,7 @@ data_sources:
                 description: "Z coordinate of the measurement point"
                 unit: "mm"
                 optional: false
-          - file: "sample_i.csv"
+          - name: "sample_i.csv"
             optional: false
             columns:
               time:
@@ -598,7 +598,7 @@ data_sources:
     subfolders:
       - name: "processed_data"
         files:
-          - file: "overview.csv"
+          - name: "overview.csv"
             optional: false
             columns:
               deposition_date:
@@ -631,7 +631,7 @@ data_sources:
                 description: "Distance of the measurement"
                 unit: "mm"
                 optional: false
-          - file: "sample_i.csv"
+          - name: "sample_i.csv"
             optional: false
             columns:
               time:
@@ -665,7 +665,7 @@ data_sources:
     subfolders:
       - name: "processed_data"
         files:
-          - file: "overview.csv"
+          - name: "overview.csv"
             optional: false
             columns:
               deposition_date:
@@ -714,7 +714,7 @@ data_sources:
                 description: "Derived compressive strength"
                 unit: "MPa"
                 optional: false
-          - file: "sample_i.csv"
+          - name: "sample_i.csv"
             optional: false
             columns:
               time:
