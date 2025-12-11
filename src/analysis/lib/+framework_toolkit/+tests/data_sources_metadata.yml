@@ -1,0 +1,648 @@
+data_sources:
+  - name: "Mass flow bucket test"
+    folder: "mass_flow_bucket_test"
+    processed_data_files:
+      - file: "mass_flow.csv"
+        optional: false
+        columns:
+          deposition_time_start:
+            description: "Starting time of collecting material."
+            unit: "HH:mm:ss.SSS"
+            optional: false
+          deposition_time_mid:
+            description: "Mean time of collecting material."
+            unit: "HH:mm:ss.SSS"
+            optional: false
+          deposition_time_end:
+            description: "Ending time of collecting material."
+            unit: "HH:mm:ss.SSS"
+            optional: false
+          mass_flow:
+            description: "Mass flow over the time window."
+            unit: "kg/min"
+            optional: false
+  - name: "Slugs test"
+    folder: "slugs_test"
+    processed_data_files:
+      - file: "yield_stress.csv"
+        optional: false
+        columns:
+          time:
+            description: "Time in HH:mm:ss.SSS format"
+            unit: "HH:mm:ss.SSS"
+            optional: false
+          droplet_mass:
+            description: "Individual droplet mass"
+            unit: "N"
+            optional: false
+          yield_stress:
+            description: "Corresponding yield stress"
+            unit: "kPa"
+            optional: false
+      - file: "mass_flow.csv"
+        optional: false
+        columns:
+          deposition_time_start:
+            description: "Starting time of collecting material in the bucket"
+            unit: "HH:mm:ss.SSS"
+            optional: false
+          deposition_time_mid:
+            description: "Mean time of collecting material in the bucket"
+            unit: "HH:mm:ss.SSS"
+            optional: false
+          deposition_time_end:
+            description: "Ending time of collecting material in the bucket"
+            unit: "HH:mm:ss.SSS"
+            optional: false
+          mass_flow:
+            description: "Mass flow over the time window"
+            unit: "kg/min"
+            optional: false
+      - file: "volumes.csv"
+        optional: true
+        columns:
+          time:
+            description: "Time in HH:mm:ss.SSS format"
+            unit: "HH:mm:ss.SSS"
+            optional: false
+          droplet_volume:
+            description: "Individual droplet volume"
+            unit: "cm³"
+            optional: false
+      - file: "volumes_grouped.csv"
+        optional: true
+        columns:
+          time:
+            description: "Time in HH:mm:ss.SSS format"
+            unit: "HH:mm:ss.SSS"
+            optional: false
+          mean_droplet_volume:
+            description: "Mean droplet volume"
+            unit: "cm³"
+            optional: false
+          std_droplet_volume:
+            description: "Standard deviation of droplet volume"
+            unit: "cm³"
+            optional: false
+      - file: "volumetric_flow.csv"
+        optional: true
+        columns:
+          deposition_time_start:
+            description: "Starting time of collecting material in the bucket"
+            unit: "HH:mm:ss.SSS"
+            optional: false
+          deposition_time_mid:
+            description: "Mean time of collecting material in the bucket"
+            unit: "HH:mm:ss.SSS"
+            optional: false
+          deposition_time_end:
+            description: "Ending time of collecting material in the bucket"
+            unit: "HH:mm:ss.SSS"
+            optional: false
+          volumetric_flow_rate:
+            description: "Volumetric flow rate over the time window"
+            unit: "L/min"
+            optional: false
+  - name: "Tracer experiments"
+    folder: "tracer_experiment"
+    processed_data_files:
+      - file: "color_values.csv"
+        optional: false
+        columns:
+          time:
+            description: "Clock time"
+            unit: "HH:mm:ss"
+            optional: false
+          R:
+            description: "Red value (RGB color space)"
+            unit: ""
+            optional: false
+          G:
+            description: "Green value (RGB color space)"
+            unit: ""
+            optional: false
+          B:
+            description: "Blue value (RGB color space)"
+            unit: ""
+            optional: false
+          X:
+            description: "X value (CIE 1931 XYZ color space)"
+            unit: ""
+            optional: false
+          Y:
+            description: "Y value (CIE 1931 XYZ color space)"
+            unit: ""
+            optional: false
+          Z:
+            description: "Z value (CIE 1931 XYZ color space)"
+            unit: ""
+            optional: false
+          L:
+            description: "L* value (CIELAB color space)"
+            unit: ""
+            optional: false
+          a:
+            description: "a* value (CIELAB color space)"
+            unit: ""
+            optional: false
+          b:
+            description: "b* value (CIELAB color space)"
+            unit: ""
+            optional: false
+      - file: "overview.csv"
+        optional: false
+        columns:
+          experiment:
+            description: "Identifier for the experiment number"
+            unit: "integer"
+            optional: false
+          serie:
+            description: "Series number the experiment belongs to"
+            unit: "integer"
+            optional: false
+          input:
+            description: "Input type: impulse, step_up, or step_down"
+            unit: ""
+            optional: false
+          material_component:
+            description: "Material component used as tracer"
+            unit: ""
+            optional: false
+          system_component:
+            description: "System component where tracer was added"
+            unit: ""
+            optional: false
+          system_component_inlet:
+            description: "Inlet of the system component"
+            unit: ""
+            optional: false
+          size:
+            description: "Impulse size in grams, step size in grams/min"
+            unit: ""
+            optional: false
+          time_start:
+            description: "Start time of experiment"
+            unit: "HH:mm:ss"
+            optional: false
+          time_end:
+            description: "End time of experiment"
+            unit: "HH:mm:ss"
+            optional: false
+          file_name:
+            description: "Filename containing the response data"
+            unit: ""
+            optional: false
+            is_file:   
+              format: "response_data.csv" # schema of the referenced response data file
+          mean:
+            description: "Mean residence time"
+            unit: "HH:mm:ss"
+            optional: false
+          variance:
+            description: "Variance of residence time"
+            unit: "HH:mm:ss"
+            optional: false
+          std:
+            description: "Standard deviation of residence time"
+            unit: "HH:mm:ss"
+            optional: false
+          p1:
+            description: "1st percentile of residence time"
+            unit: "HH:mm:ss"
+            optional: false
+          p5:
+            description: "5th percentile of residence time"
+            unit: "HH:mm:ss"
+            optional: false
+          p50:
+            description: "50th percentile (median) of residence time"
+            unit: "HH:mm:ss"
+            optional: false
+          p95:
+            description: "95th percentile of residence time"
+            unit: "HH:mm:ss"
+            optional: false
+          p99:
+            description: "99th percentile of residence time"
+            unit: "HH:mm:ss"
+            optional: false
+      - file: "response_data.csv"
+        optional: false
+        columns:
+          time:
+            description: "Clock time"
+            unit: "HH:mm:ss"
+            optional: false
+          time_response:
+            description: "Time since start of experiment"
+            unit: "HH:mm:ss"
+            optional: false
+          value:
+            description: "Normalized response value"
+            unit: ""
+            optional: false
+          R:
+            description: "Red value (RGB color space)"
+            unit: ""
+            optional: false
+          G:
+            description: "Green value (RGB color space)"
+            unit: ""
+            optional: false
+          B:
+            description: "Blue value (RGB color space)"
+            unit: ""
+            optional: false
+          X:
+            description: "X value (CIE 1931 XYZ color space)"
+            unit: ""
+            optional: false
+          Y:
+            description: "Y value (CIE 1931 XYZ color space)"
+            unit: ""
+            optional: false
+          Z:
+            description: "Z value (CIE 1931 XYZ color space)"
+            unit: ""
+            optional: false
+          L:
+            description: "L* value (CIELAB color space)"
+            unit: ""
+            optional: false
+          a:
+            description: "a* value (CIELAB color space)"
+            unit: ""
+            optional: false
+          b:
+            description: "b* value (CIELAB color space)"
+            unit: ""
+            optional: false
+  - name: "Compression test"
+    folder: "compression_test"
+    processed_data_files:
+      - file: "overview.csv"
+        optional: false
+        columns:
+          deposition_date:
+            description: "Date when the material was deposited"
+            unit: "yyyy-MM-dd"
+            optional: false
+          deposition_time_start:
+            description: "Start time of deposition"
+            unit: "HH:mm:ss"
+            optional: false
+          deposition_time_end:
+            description: "End time of deposition"
+            unit: "HH:mm:ss"
+            optional: false
+          testing_date:
+            description: "Date when the test was performed"
+            unit: "yyyy-MM-dd"
+            optional: false
+          testing_time_start:
+            description: "Start time of the test"
+            unit: "HH:mm:ss"
+            optional: false
+          sample_diameter:
+            description: "Diameter of the specimen"
+            unit: "mm"
+            optional: false
+          sample_height:
+            description: "Height of the specimen"
+            unit: "mm"
+            optional: false
+          sample_mass:
+            description: "Mass of the specimen"
+            unit: "g"
+            optional: false
+          loading_rate:
+            description: "Applied loading rate"
+            unit: "kN/s"
+            optional: false
+          density:
+            description: "Density of the specimen"
+            unit: "kg/m³"
+            optional: false
+          failure_load:
+            description: "Measured failure load"
+            unit: "kN"
+            optional: false
+          compressive_strength:
+            description: "Calculated compressive strength"
+            unit: "MPa"
+            optional: false
+  - name: "Flat punch indentation test (FPIT)"
+    folder: "fpit"
+    processed_data_files:
+      - file: "overview.csv"
+        optional: false
+        columns:
+          deposition_date:
+            description: "Date when the material was deposited"
+            unit: "yyyy-MM-dd"
+            optional: false
+          deposition_time_start:
+            description: "Start time of deposition"
+            unit: "HH:mm:ss"
+            optional: false
+          deposition_time_end:
+            description: "End time of deposition"
+            unit: "HH:mm:ss"
+            optional: false
+          testing_date:
+            description: "Date when the test was performed"
+            unit: "yyyy-MM-dd"
+            optional: false
+          testing_time:
+            description: "Time when the test was performed"
+            unit: "HH:mm:ss"
+            optional: false
+          file_name:
+            description: "Filename containing the detailed sample data"
+            unit: "-"
+            optional: false
+            is_file:
+              format: "sample_i.csv" # schema of the referenced sample file
+          loading_rate:
+            description: "Applied loading rate"
+            unit: "mm/s"
+            optional: false
+          indenter_radius:
+            description: "Radius of the flat punch indenter"
+            unit: "mm"
+            optional: false
+          sample_radius:
+            description: "Radius of the tested sample"
+            unit: "mm"
+            optional: false
+          stiffness_modulus:
+            description: "Derived stiffness modulus from the indentation"
+            unit: "MPa"
+            optional: false
+          cohesion:
+            description: "Derived cohesion from the indentation"
+            unit: "MPa"
+            optional: false
+          friction_angle:
+            description: "Derived friction angle from the indentation"
+            unit: "degrees"
+            optional: false
+      - file: "sample_i.csv"
+        optional: false
+        columns:
+          time:
+            description: "Start time of the measurement"
+            unit: "HH:mm:ss.SSS"
+            optional: false
+          load:
+            description: "Applied indentation load"
+            unit: "N"
+            optional: false
+          depth:
+            description: "Indentation depth"
+            unit: "mm"
+            optional: false
+  - name: "Pocket shear vane test"
+    folder: "pocket_shear_vane"
+    processed_data_files:
+      - file: "overview.csv"
+        optional: false
+        columns:
+          deposition_date:
+            description: "Date when the material was deposited"
+            unit: "yyyy-MM-dd"
+            optional: false
+          deposition_time_start:
+            description: "Start time of deposition"
+            unit: "HH:mm:ss"
+            optional: false
+          deposition_time_end:
+            description: "End time of deposition"
+            unit: "HH:mm:ss"
+            optional: false
+          insertion_time:
+            description: "Time when the vane was inserted"
+            unit: "HH:mm:ss"
+            optional: false
+          testing_date:
+            description: "Date when the test was performed"
+            unit: "yyyy-MM-dd"
+            optional: false
+          testing_time_start:
+            description: "Start time of the test"
+            unit: "HH:mm:ss"
+            optional: false
+          vane_diameter:
+            description: "Diameter of the vane"
+            unit: "mm"
+            optional: false
+          vane_height:
+            description: "Height of the vane"
+            unit: "mm"
+            optional: false
+          vane_material:
+            description: "Material of the vane"
+            unit: ""
+            optional: false
+          shear_strength:
+            description: "Measured shear strength"
+            unit: "kPa"
+            optional: false
+  - name: "Temperature: single-point"
+    folder: "temperature_point"
+    processed_data_files:
+      - file: "overview.csv"
+        optional: false
+        columns:
+          deposition_date:
+            description: "Date when the material was deposited"
+            unit: "yyyy-MM-dd"
+            optional: false
+          deposition_time_start:
+            description: "Start time of deposition"
+            unit: "HH:mm:ss"
+            optional: false
+          deposition_time_end:
+            description: "End time of deposition"
+            unit: "HH:mm:ss"
+            optional: false
+          testing_date:
+            description: "Date when the test was performed"
+            unit: "yyyy-MM-dd"
+            optional: false
+          testing_time_start:
+            description: "Start time of the test"
+            unit: "HH:mm:ss"
+            optional: false
+          file_name:
+            description: "Filename containing the detailed measurement data"
+            unit: "-"
+            optional: false
+            is_file:
+              format: "sample_i.csv"
+          position_x:
+            description: "X coordinate of the measurement point"
+            unit: "mm"
+            optional: false
+          position_y:
+            description: "Y coordinate of the measurement point"
+            unit: "mm"
+            optional: false
+          position_z:
+            description: "Z coordinate of the measurement point"
+            unit: "mm"
+            optional: false
+      - file: "sample_i.csv"
+        optional: false
+        columns:
+          time:
+            description: "Time of measurement"
+            unit: "HH:mm:ss.SSS"
+            optional: false
+          age:
+            description: "Age of the material at measurement"
+            unit: "HH:mm:ss.SSS"
+            optional: false
+          temperature:
+            description: "Measured temperature"
+            unit: "°C"
+            optional: false
+  - name: "Ultrasonic wave transmission test (UWTT)"
+    folder: "uwtt"
+    processed_data_files:
+      - file: "overview.csv"
+        optional: false
+        columns:
+          deposition_date:
+            description: "Date when the material was deposited"
+            unit: "yyyy-MM-dd"
+            optional: false
+          deposition_time_start:
+            description: "Start time of deposition"
+            unit: "HH:mm:ss"
+            optional: false
+          deposition_time_end:
+            description: "End time of deposition"
+            unit: "HH:mm:ss"
+            optional: false
+          testing_date:
+            description: "Date when the test was performed"
+            unit: "yyyy-MM-dd"
+            optional: false
+          testing_time_start:
+            description: "Start time of the test"
+            unit: "HH:mm:ss"
+            optional: false
+          file_name:
+            description: "Filename containing the detailed measurement data"
+            unit: "-"
+            optional: false
+            is_file:
+              format: "sample_i.csv"
+          distance:
+            description: "Distance of the measurement"
+            unit: "mm"
+            optional: false
+      - file: "sample_i.csv"
+        optional: false
+        columns:
+          time:
+            description: "Time of measurement"
+            unit: "HH:mm:ss"
+            optional: false
+          age:
+            description: "Age of the material at measurement"
+            unit: "HH:mm:ss"
+            optional: false
+          velocity:
+            description: "Ultrasonic wave velocity"
+            unit: "m/s"
+            optional: false
+          acceleration:
+            description: "Acceleration measured during test"
+            unit: "m/s²"
+            optional: false
+          temperature:
+            description: "Temperature of the material"
+            unit: "°C"
+            optional: false
+  - name: "Unconfined uniaxial compression test (UUCT)"
+    folder: "uuct"
+    processed_data_files:
+      - file: "overview.csv"
+        optional: false
+        columns:
+          deposition_date:
+            description: "Date when the material was deposited"
+            unit: "yyyy-MM-dd"
+            optional: false
+          deposition_time_start:
+            description: "Start time of deposition"
+            unit: "HH:mm:ss"
+            optional: false
+          deposition_time_end:
+            description: "End time of deposition"
+            unit: "HH:mm:ss"
+            optional: false
+          testing_date:
+            description: "Date when the test was performed"
+            unit: "yyyy-MM-dd"
+            optional: false
+          testing_time:
+            description: "Time when the test was performed"
+            unit: "HH:mm:ss"
+            optional: false
+          file_name:
+            description: "Filename containing the detailed sample data"
+            unit: "-"
+            optional: false
+            is_file:
+              format: "sample_i.csv"
+          loading_rate:
+            description: "Applied loading rate"
+            unit: "mm/s"
+            optional: false
+          sample_radius:
+            description: "Radius of the tested sample"
+            unit: "mm"
+            optional: false
+          sample_height:
+            description: "Height of the tested sample"
+            unit: "mm"
+            optional: false
+          stiffness_modulus:
+            description: "Derived stiffness modulus from the test"
+            unit: "MPa"
+            optional: false
+          compressive_strength:
+            description: "Derived compressive strength"
+            unit: "MPa"
+            optional: false
+      - file: "sample_i.csv"
+        optional: false
+        columns:
+          time:
+            description: "Time of measurement"
+            unit: "HH:mm:ss.SSS"
+            optional: false
+          load:
+            description: "Applied load"
+            unit: "N"
+            optional: false
+          displacement:
+            description: "Displacement during loading"
+            unit: "mm"
+            optional: false
+          width:
+            description: "Measured width of the sample"
+            unit: "mm"
+            optional: false
+
+
+
+
+
+
+
+
+
