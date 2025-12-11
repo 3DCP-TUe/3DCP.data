@@ -16,6 +16,7 @@ In the following README, the structure and more detailed information of the vari
     - [Material components](docs/system_data/material_components.md)
     - [System components](docs/system_data/system_components.md)
 - [In-line and on-line measurements](docs/inline_online_measurements/README.md)
+    - [Mass flow bucket test](docs/inline_online_measurements/mass_flow_bucket_test.md)
     - [Slugs test](docs/inline_online_measurements/slugs_test.md)
     - [Tracer experiment](docs/inline_online_measurements/tracer_experiment.md)
 - [In-situ and off-line measurements](docs/insitu_offline_measurements/README.md)
