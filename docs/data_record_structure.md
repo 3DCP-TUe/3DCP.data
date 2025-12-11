@@ -10,6 +10,7 @@ The data record is organized in a folder structure containing:
       - [system_components](system_data/system_components.md)
     
     [In-line and on-line measurements](inline_online_measurements/README.md)    
+      - [mass_flow_bucket_test](inline_online_measurements/mass_flow_bucket_test.md)
       - [slugs_test](inline_online_measurements/slugs_test.md)
       - [tracer_experiment](inline_online_measurements/tracer_experiment.md)
         
