@@ -80,7 +80,7 @@ This repository contains the detailed information of the database framework, and
 }
 ```
 
-All data records that follow this framework are also published on Zenodo. An overview is provided [here](docs/available_data_records.md). They can be cited using the DOI listed on their respective Zenodo pages.
+All data records that follow this framework are also published on Zenodo. They can be cited using the DOI listed on their respective Zenodo pages. An overview is provided [here](docs/available_data_records.md). 
 
 ## Open science statement
 
