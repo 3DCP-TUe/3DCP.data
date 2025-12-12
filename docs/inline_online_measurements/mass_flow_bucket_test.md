@@ -22,9 +22,9 @@ The `processed_data` folder contains the following files:
 
 **`mass_flow.csv`** contains mass flow rate calculated per bucket.
 
-| Column                  | Description                                                                  |
-|-------------------------|------------------------------------------------------------------------------|
-| `deposition_time_start` | Starting time of collecting material in the bucket in HH:mm:ss.SSS format    |
-| `deposition_time_mid`   | Mean time of collecting material in the bucket in HH:mm:ss.SSS format        |
-| `deposition_time_end`   | Ending time of collecting material in the bucket in HH:mm:ss.SSS format      |
-| `mass_flow`             | Mass flow over the time window [kg/min]                                      |
+| Column                  | Unit         | Description                                        |
+|-------------------------|--------------|----------------------------------------------------|
+| `deposition_time_start` | HH:mm:ss.SSS | Starting time of collecting material in the bucket |
+| `deposition_time_mid`   | HH:mm:ss.SSS | Mean time of collecting material in the bucket     |
+| `deposition_time_end`   | HH:mm:ss.SSS | Ending time of collecting material in the bucket   |
+| `mass_flow`             | kg/min       | Mass flow rate over the time window                |

@@ -20,17 +20,18 @@ The `processed_data` folder contains at least the following files:
 
 **`overview.csv`**
 
-|Columns                        | Units      |
-|-------------------------------|------------|
-| deposition_date               | yyyy-MM-dd |
-| deposition_time_start         | HH:mm:ss   |
-| deposition_time_end           | HH:mm:ss   |
-| testing_date                  | yyyy-MM-dd |
-| testing_time_start            | HH:mm:ss   |
-| sample_diameter               | mm         |
-| sample_height                 | mm         |
-| sample_mass                   | g          |
-| loading_rate                  | kN/s       |
-| density                       | kg/m³      |
-| failure_load                  | kN         |
-| compressive_strength          | MPa        |
+| Column                  | Unit       | Description                                          |
+|-------------------------|------------|------------------------------------------------------|
+| `deposition_date`       | yyyy-MM-dd | Date when the material was deposited                 |
+| `deposition_time_start` | HH:mm:ss   | Start time of deposition                             |
+| `deposition_time_end`   | HH:mm:ss   | End time of deposition                               |
+| `testing_date`          | yyyy-MM-dd | Date when the test was performed                     |
+| `testing_time_start`    | HH:mm:ss   | Time when the test started                           |
+| `sample_diameter`       | mm         | Diameter of the cylindrical sample                   |
+| `sample_height`         | mm         | Height of the cylindrical sample                     |
+| `sample_mass`           | g          | Mass of the sample                                   |
+| `loading_rate`          | kN/s       | Rate at which load is applied                        |
+| `density`               | kg/m³      | Density of the sample                                |
+| `failure_load`          | kN         | Maximum load reached at failure                      |
+| `compressive_strength`  | MPa        | Compressive strength calculated from the test        |
+

@@ -20,24 +20,26 @@ The `processed_data` folder contains at least the following files:
 
 **`overview.csv`**
 
-|Columns                        | Units      |
-|-------------------------------|------------|
-| deposition_date               | yyyy-MM-dd |
-| deposition_time_start         | HH:mm:ss   |
-| deposition_time_end           | HH:mm:ss   |
-| testing_date                  | yyyy-MM-dd |
-| testing_time_start            | HH:mm:ss   |
-| file_name                     | -          |
-| distance                      | mm         |
+| Column                 | Unit       | Description                                   |
+|------------------------|------------|-----------------------------------------------|
+| `deposition_date`      | yyyy-MM-dd | Date when the material was deposited          |
+| `deposition_time_start`| HH:mm:ss   | Start time of deposition                      |
+| `deposition_time_end`  | HH:mm:ss   | End time of deposition                        |
+| `testing_date`         | yyyy-MM-dd | Date when the test was performed              |
+| `testing_time_start`   | HH:mm:ss   | Start time of the test                        |
+| `file_name`            | –          | Filename containing the detailed test data    |
+| `distance`             | mm         | Distance between transducers                  |
+
 
 ---
 
 **`sample_i.csv`**
 
-|Columns                        | Units      |
-|-------------------------------|------------|
-| time                          | HH:mm:ss   |
-| age                           | HH:mm:ss   |
-| velocity                      | m/s        |
-| acceleration                  | m/s²       |
-| temperature                   | °C         |
+| Column        | Unit       | Description                              |
+|---------------|------------|------------------------------------------|
+| `time`        | HH:mm:ss   | Clock time of each measurement           |
+| `age`         | HH:mm:ss   | Age of the sample at the time of testing |
+| `velocity`    | m/s        | Measured ultrasonic pulse velocity       |
+| `acceleration`| m/s²       | Measured acceleration of the pulse       |
+| `temperature` | °C         | Temperature of the sample during testing |
+

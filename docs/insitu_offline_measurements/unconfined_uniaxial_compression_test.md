@@ -20,27 +20,27 @@ The `processed_data` folder contains at least the following files:
 
 **`overview.csv`**
 
-|Columns                        | Units      |
-|-------------------------------|------------|
-| deposition_date               | yyyy-MM-dd |
-| deposition_time_start         | HH:mm:ss   |
-| deposition_time_end           | HH:mm:ss   |
-| testing_date                  | yyyy-MM-dd |
-| testing_time                  | HH:mm:ss   |
-| file_name                     | -          |
-| loading_rate                  | mm/s       |
-| sample_radius                 | mm         |
-| sample_height                 | mm         |
-| stiffness_modulus             | MPa        |
-| compressive_strength          | MPa        |
+| Column                  | Unit       | Description                                   |
+|-------------------------|------------|-----------------------------------------------|
+| `deposition_date`       | yyyy-MM-dd | Date when the material was deposited          |
+| `deposition_time_start` | HH:mm:ss   | Start time of deposition                      |
+| `deposition_time_end`   | HH:mm:ss   | End time of deposition                        |
+| `testing_date`          | yyyy-MM-dd | Date when the test was performed              |
+| `testing_time`          | HH:mm:ss   | Time when the test was performed              |
+| `file_name`             | –          | Filename containing the detailed test data    |
+| `loading_rate`          | mm/min     | Loading rate applied during the compression   |
+| `sample_radius`         | mm         | Radius of the cylindrical sample              |
+| `sample_height`         | mm         | Height of the cylindrical sample              |
+| `stiffness_modulus`     | MPa        | Calculated stiffness modulus                  |
+| `compressive_strength`  | MPa        | Calculated compressive strength               |
 
 ---
 
 **`sample_i.csv`**
 
-|Columns                        | Units          |
-|-------------------------------|----------------|
-| time                          | HH:mm:ss.SSS   |
-| load                          | N              |
-| displacement                  | mm             |
-| width                         | mm             |
+| Column         | Unit         | Description                         |
+|----------------|--------------|-------------------------------------|
+| `time`         | HH:mm:ss.SSS | Clock time of each measurement      |
+| `load`         | N            | Applied compression load            |
+| `displacement` | mm           | Vertical displacement of the sample |
+| `width`        | mm           | Sample width                        |

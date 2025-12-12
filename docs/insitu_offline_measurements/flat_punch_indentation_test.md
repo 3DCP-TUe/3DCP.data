@@ -20,27 +20,29 @@ The `processed_data` folder contains at least the following files:
 
 **`overview.csv`**
 
-|Columns                        | Units      |
-|-------------------------------|------------|
-| deposition_date               | yyyy-MM-dd |
-| deposition_time_start         | HH:mm:ss   |
-| deposition_time_end           | HH:mm:ss   |
-| testing_date                  | yyyy-MM-dd |
-| testing_time                  | HH:mm:ss   |
-| file_name                     | -          |
-| loading_rate                  | mm/s       |
-| indenter_radius               | mm         |
-| sample_radius                 | mm         |
-| stiffness_modulus             | MPa        |
-| cohesion                      | MPa        |
-| friction_angle                | degrees    |
+| Column                  | Unit       | Description                                                     |
+|-------------------------|------------|-----------------------------------------------------------------|
+| `deposition_date`       | yyyy-MM-dd | Date when the material was deposited                            |
+| `deposition_time_start` | HH:mm:ss   | Start time of deposition                                        |
+| `deposition_time_end`   | HH:mm:ss   | End time of deposition                                          |
+| `testing_date`          | yyyy-MM-dd | Date when the test was performed                                |
+| `testing_time`          | HH:mm:ss   | Time when the test started                                      |
+| `file_name`             | –          | Name of the file containing the sample response                 |
+| `loading_rate`          | mm/s       | Rate at which the indenter is displaced into the sample         |
+| `indenter_radius`       | mm         | Radius of the flat punch indenter                               |
+| `sample_radius`         | mm         | Radius of the sample being tested                               |
+| `stiffness_modulus`     | MPa        | Stiffness modulus derived from the indentation response         |
+| `cohesion`              | MPa        | Cohesion derived from the indentation response                  |
+| `friction_angle`        | degrees    | Friction angle derived from the indentation response            |
+
 
 ---
 
 **`sample_i.csv`**
 
-|Columns                        | Units          |
-|-------------------------------|----------------|
-| time                          | HH:mm:ss.SSS   |
-| load                          | N              |
-| depth                         | mm             |
+| Column | Unit         | Description                          |
+|--------|--------------|--------------------------------------|
+| `time` | HH:mm:ss.SSS | Clock time of the measurement        |
+| `load` | N            | Indentation load applied             |
+| `depth`| mm           | Indentation depth measured           |
+

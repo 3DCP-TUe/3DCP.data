@@ -23,49 +23,55 @@ The `processed_data` folder contains the following files:
 
 **`yield_stress.csv`** contains droplet mass and yield stress measurement data over time.
 
-| Column         | Description                                    |
-|----------------|------------------------------------------------|
-| `time`         | Time in HH:mm:ss.SSS format                    |
-| `droplet_mass` | Individual droplet mass [N]                    |
-| `yield_stress` | Corresponding yield stress [kPa]               |
+| Column         | Unit         | Description                             |
+|----------------|--------------|-----------------------------------------|
+| `time`         | HH:mm:ss.SSS | Time of measurement                     |
+| `droplet_mass` | N            | Individual droplet mass                 |
+| `yield_stress` | kPa          | Corresponding yield stress              |
+
 
 ---
 
 **`mass_flow.csv`** contains mass flow rate calculated per bucket.
 
-| Column                  | Description                                                                  |
-|-------------------------|------------------------------------------------------------------------------|
-| `deposition_time_start` | Starting time of collecting material in the bucket in HH:mm:ss.SSS format    |
-| `deposition_time_mid`   | Mean time of collecting material in the bucket in HH:mm:ss.SSS format        |
-| `deposition_time_end`   | Ending time of collecting material in the bucket in HH:mm:ss.SSS format      |
-| `mass_flow`             | Mass flow over the time window [kg/min]                                      |
+| Column                  | Unit         | Description                                             |
+|-------------------------|--------------|---------------------------------------------------------|
+| `deposition_time_start` | HH:mm:ss.SSS | Starting time of collecting material in the bucket      |
+| `deposition_time_mid`   | HH:mm:ss.SSS | Mean time of collecting material in the bucket          |
+| `deposition_time_end`   | HH:mm:ss.SSS | Ending time of collecting material in the bucket        |
+| `mass_flow`             | kg/min       | Mean mass flow over the defined time window             |
+
 
 ---
 
 **`volumes.csv`** contains droplet volume data over time. Present when camera is used.
 
-| Column           | Description                                      |
-|------------------|--------------------------------------------------|
-| `time`           | Time in HH:mm:ss.SSS format                      |
-| `droplet_volume` | Individual droplet volume [cm³]                  |
+| Column                | Unit         | Description                              |
+|-----------------------|--------------|------------------------------------------|
+| `time`                | HH:mm:ss.SSS | Time of measurement                      |
+| `mean_droplet_volume` | cm³          | Mean droplet volume                      |
+| `std_droplet_volume`  | cm³          | Standard deviation of droplet volume     |
+
 
 ---
 
 **`volumes_grouped.csv`** contains droplet volume data that are grouped when duplicate measures of the same droplet have been taken. Present when camera is used.
 
-| Column                   | Description                                      |
-|--------------------------|--------------------------------------------------|
-| `time`                   | Time in HH:mm:ss.SSS format                      |
-| `mean_droplet_volume`    | Mean droplet volume [cm³]                        |
-| `std_droplet_volume`     | Standard deviation of droplet volume [cm³]       |
+| Column                | Unit         | Description                              |
+|-----------------------|--------------|------------------------------------------|
+| `time`                | HH:mm:ss.SSS | Time of measurement                      |
+| `mean_droplet_volume` | cm³          | Mean droplet volume                      |
+| `std_droplet_volume`  | cm³          | Standard deviation of droplet volume     |
+
 
 ---
 
 **`volumetric_flow.csv`** contains volumetric flow rate calculated per bucket. Present when camera is used.
 
-| Column                        | Description                                                                      |
-|-------------------------------|----------------------------------------------------------------------------------|
-| `deposition_time_start`       | Starting time of collecting material in the bucket in HH:mm:ss.SSS format        |
-| `deposition_time_mid`         | Mean time of collecting material in the bucket in HH:mm:ss.SSS format            |
-| `deposition_time_end`         | Ending time of collecting material in the bucket in HH:mm:ss.SSS format          |
-| `volumetric_flow_rate`        | Volumetric flow rate over the time window [L/min]                                |
+| Column                  | Unit         | Description                                             |
+|-------------------------|--------------|---------------------------------------------------------|
+| `deposition_time_start` | HH:mm:ss.SSS | Starting time of collecting material in the bucket      |
+| `deposition_time_mid`   | HH:mm:ss.SSS | Mean time of collecting material in the bucket          |
+| `deposition_time_end`   | HH:mm:ss.SSS | Ending time of collecting material in the bucket        |
+| `volumetric_flow_rate`  | L/min        | Volumetric flow rate over the time window               |
+

@@ -20,15 +20,16 @@ The `processed_data` folder contains at least the following files:
 
 **`overview.csv`**
 
-|Columns                        | Units      |
-|-------------------------------|------------|
-| deposition_date               | yyyy-MM-dd |
-| deposition_time_start         | HH:mm:ss   |
-| deposition_time_end           | HH:mm:ss   |
-| insertion_time                | HH:mm:ss   |
-| testing_date                  | yyyy-MM-dd |
-| testing_time_start            | HH:mm:ss   |
-| vane_diameter                 | mm         |
-| vane_height                   | mm         |
-| vane_material                 | mm         |
-| shear_strength                | kPa        |
+| Column                  | Unit       | Description                                                       |
+|-------------------------|------------|-------------------------------------------------------------------|
+| `deposition_date`       | yyyy-MM-dd | Date when the material was deposited                              |
+| `deposition_time_start` | HH:mm:ss   | Start time of deposition                                          |
+| `deposition_time_end`   | HH:mm:ss   | End time of deposition                                            |
+| `insertion_time`        | HH:mm:ss   | Time when the vane was inserted into the sample                   |
+| `testing_date`          | yyyy-MM-dd | Date when the test was performed                                  |
+| `testing_time_start`    | HH:mm:ss   | Start time of the test                                            |
+| `vane_diameter`         | mm         | Diameter of the vane used in the test                             |
+| `vane_height`           | mm         | Height of the vane used in the test                               |
+| `vane_material`         | –          | Material of the vane used                                         |
+| `shear_strength`        | kPa        | Maximum shear strength recorded by the vane                       |
+

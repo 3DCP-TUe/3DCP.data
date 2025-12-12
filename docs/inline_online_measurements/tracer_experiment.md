@@ -22,43 +22,43 @@ The `processed_data` folder contains the following files:
 
 **`color_values.csv`** contains color measurement data over time.
 
-| Column     | Description                                      |
-|------------|--------------------------------------------------|
-| `time`     | Clock time in HH:mm:ss format                    |
-| `R`        | Red value (RGB color space)                      |
-| `G`        | Green value (RGB color space)                    |
-| `B`        | Blue value (RGB color space)                     |
-| `X`        | X value (CIE 1931 XYZ color space)               |
-| `Y`        | Y value (CIE 1931 XYZ color space)               |
-| `Z`        | Z value (CIE 1931 XYZ color space)               |
-| `L`        | L* value (CIELAB color space)                    |
-| `a`        | a* value (CIELAB color space)                    |
-| `b`        | b* value (CIELAB color space)                    |
+| Column | Unit      | Description                               |
+|--------|-----------|-------------------------------------------|
+| `time` | HH:mm:ss  | Clock time of measurement                 |
+| `R`    | –         | Red value (RGB color space)               |
+| `G`    | –         | Green value (RGB color space)             |
+| `B`    | –         | Blue value (RGB color space)              |
+| `X`    | –         | X value (CIE 1931 XYZ color space)        |
+| `Y`    | –         | Y value (CIE 1931 XYZ color space)        |
+| `Z`    | –         | Z value (CIE 1931 XYZ color space)        |
+| `L`    | –         | L* value (CIELAB color space)             |
+| `a`    | –         | a* value (CIELAB color space)             |
+| `b`    | –         | b* value (CIELAB color space)             |
 
 ---
 
 **`overview.csv`** contains metadata and statistical summaries for each tracer experiment.
 
-| Column                     | Description                                                                 |
-|----------------------------|-----------------------------------------------------------------------------|
-| `experiment`               | Identifier for the experiment number (integer)                              |
-| `serie`                    | Series number the experiment belongs to (integer)                           |
-| `input`                    | Input type: `impulse`, `step_up`, or `step_down`                            |
-| `material_component`       | Material component used as tracer material (must match material data)       |
-| `system_component`         | System component where tracer was added (must match system setup info)      |
-| `system_component_inlet`   | Inlet of the system component (must match system setup info)                |
-| `size`                     | Impulse size in grams, step size in grams/min                               |
-| `time_start`               | Start time of experiment (HH:mm:ss), when material was injected             |
-| `time_end`                 | End time of experiment (HH:mm:ss)                                           |
-| `file_name`                | Filename containing the response data                                       |
-| `mean`                     | Mean residence time (HH:mm:ss)                                              |
-| `variance`                 | Variance of the residence time (HH:mm:ss)                                   |
-| `std`                      | Standard deviation of the residence time (HH:mm:ss)                         |
-| `p1`                       | 1st percentile of the residence time (HH:mm:ss)                             |
-| `p5`                       | 5th percentile of the residence time (HH:mm:ss)                             |
-| `p50`                      | 50th percentile (median) of the residence time (HH:mm:ss)                   |
-| `p95`                      | 95th percentile of the residence time (HH:mm:ss)                            |
-| `p99`                      | 99th percentile of the residence time (HH:mm:ss)                            |
+| Column                   | Unit      | Description                                              |
+|--------------------------|-----------|----------------------------------------------------------|
+| `experiment`             | –         | Identifier for the experiment number                     |
+| `serie`                  | –         | Series number the experiment belongs to                  |
+| `input`                  | –         | Input type (`impulse`, `step_up`, `step_down`)           |
+| `material_component`     | –         | Material component used as tracer                        |
+| `system_component`       | –         | System component where tracer was added                  |
+| `system_component_inlet` | –         | Inlet of the system component                            |
+| `size`                   | g / g/min | Impulse size (g) or step size (g/min)                    |
+| `time_start`             | HH:mm:ss  | Start time of experiment                                 |
+| `time_end`               | HH:mm:ss  | End time of experiment                                   |
+| `file_name`              | –         | Filename containing the response data                    |
+| `mean`                   | HH:mm:ss  | Mean residence time                                      |
+| `variance`               | HH:mm:ss  | Variance of the residence time                           |
+| `std`                    | HH:mm:ss  | Standard deviation of the residence time                 |
+| `p1`                     | HH:mm:ss  | 1st percentile of the residence time                     |
+| `p5`                     | HH:mm:ss  | 5th percentile                                            |
+| `p50`                    | HH:mm:ss  | Median (50th percentile)                                 |
+| `p95`                    | HH:mm:ss  | 95th percentile                                          |
+| `p99`                    | HH:mm:ss  | 99th percentile                                          |
 
 ---
 
@@ -66,17 +66,19 @@ The `processed_data` folder contains the following files:
 
 Each experiment has a corresponding CSV file containing the response values over time.
 
-| Column         | Description                                                              |
-|----------------|--------------------------------------------------------------------------|
-| `time`         | Clock time in HH:mm:ss format                                            |
-| `time_response`| Time since start of experiment, starting from 00:00:00 (HH:mm:ss)        |
-| `value`        | Normalized response value                                                |
-| `R`            | Red value (RGB color space)                                              |
-| `G`            | Green value (RGB color space)                                            |
-| `B`            | Blue value (RGB color space)                                             |
-| `X`            | X value (CIE 1931 XYZ color space)                                       |
-| `Y`            | Y value (CIE 1931 XYZ color space)                                       |
-| `Z`            | Z value (CIE 1931 XYZ color space)                                       |
-| `L`            | L* value (CIELAB color space)                                            |
-| `a`            | a* value (CIELAB color space)                                            |
-| `b`            | b* value (CIELAB color space)                                            |
+| Column         | Unit     | Description                               |
+|----------------|----------|-------------------------------------------|
+| `time`         | HH:mm:ss | Clock time of measurement                 |
+| `time_response`| HH:mm:ss | Time since start of experiment            |
+| `value`        | –        | Normalized response value                 |
+| `R`            | –        | Red value (RGB color space)               |
+| `G`            | –        | Green value (RGB color space)             |
+| `B`            | –        | Blue value (RGB color space)              |
+| `X`            | –        | X value (CIE 1931 XYZ color space)        |
+| `Y`            | –        | Y value (CIE 1931 XYZ color space)        |
+| `Z`            | –        | Z value (CIE 1931 XYZ color space)        |
+| `L`            | –        | L* value (CIELAB color space)             |
+| `a`            | –        | a* value (CIELAB color space)             |
+| `b`            | –        | b* value (CIELAB color space)             |
+
+
