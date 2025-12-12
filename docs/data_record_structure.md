@@ -25,6 +25,7 @@ The data record is organized in a folder structure containing:
 - **analysis**: Contains scripts to perform analysis over multiple sessions. For example, to find correlations between experiments. 
 - **misc**: An optional folder that contains all other material that is not (yet) categorized, such as small additional experiments, preliminary analyses, or miscellaneous data files.
 - **metadata_record.yml**: Each record contains a metadata file that includes information about the creators and a description of the data record, explaining the purpose for which it was created. This metadata file follows the structure of zenodo. A template/example can be found [here](../src/template/metadata_record.yml).
+- **metadata_data_sources.yml**: This metadata file defines the structure and format of all experiment-specific data sources (i.e., all data sources except system data). It specifies the required subfolders, the expected files within each experiment, and the complete schema for each file, including column names, descriptions, units, and whether they are optional. Additionally, this file is used by the automated validation routines to verify whether a data record is correctly formatted and complete. The current version can be found [here](metadata_data_sources.yml), and it must be copied into the root folder of the data record before running any tests.
 
 The figure below shows a typical folder structure of a data record. A template/example of a data record can be found [here](src/template).
 
@@ -88,5 +89,6 @@ The figure below shows a typical folder structure of a data record. A template/e
 |   |   +-- script.m
 |   |   +-- ...
 |   +-- metadata_record.yml
+|   +-- metadata_data_sources.yml
 |   +-- LICENSE
 ```
