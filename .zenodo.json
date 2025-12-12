@@ -4,15 +4,25 @@
 			"name": "Deetman, Arjen",
 			"affiliation": "Eindhoven University of Technology",
 			"orcid": "0000-0001-6756-5151"
-		}
-	],
-
-	"contributors": [
-        {
+		},
+		{
 			"name": "Bos, Derk",
 			"affiliation": "Eindhoven University of Technology",
-			"orcid": "0000-0002-1668-2638",
-			"type": "Other"
+			"orcid": "0000-0002-1668-2638"
+		},
+		{
+			"name": "Lucas, Sandra",
+			"affiliation": "Eindhoven University of Technology",
+			"orcid": "0000-0003-3893-5322"
+		},
+		{
+			"name": "Salet, Theo",
+			"affiliation": "Eindhoven University of Technology"
+		},
+		{
+			"name": "Wolfs, Rob",
+			"affiliation": "Eindhoven University of Technology",
+			"orcid": "0000-0001-7897-433X"
 		}
 	],
 
