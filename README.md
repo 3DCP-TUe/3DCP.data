@@ -53,6 +53,35 @@ x.x.0 ---> PATCH version: Small backward-compatible changes; for example, small 
 
 If you have any questions or comments about this project, please open an issue on the repository’s issue page. This can include questions about the content, such as missing information, and the data structure. We encourage you to open an issue instead of sending us emails to help establish an open community. By keeping discussions open, everyone can contribute and see the feedback and questions of others. In addition to this, please see our open science statement below.
 
+## How to cite
+
+The database framework and its underlying concept are described in a journal paper. For generic references to the database framework, this paper can be cited. The BibTeX entry is provided below:
+
+```bibtex
+@article{3DCPdata_RINENG,
+    title = {A database framework for {3D} concrete printing},
+    author = {A. Deetman and D. Bos and S. Lucas and T. Salet and R. Wolfs},
+    journal = {Results in Engineering},
+    year = {2025},
+    doi = {10.1016/j.rineng.2025.108669}
+}
+```
+
+This repository contains the detailed information of the database framework, and it is the implementation that is and will continue to be updated over time. For specific aspects or implementations that are not part of a scientific publication, this repository can be referenced directly. This repository is mirrored on Zenodo. For citations of specific versions of the framework and their DOIs, please visit the Zenodo page. To cite the overall repository, the Zenodo project can be referenced using the following BibTeX:
+
+```bibtex
+@misc{3DCPdata_Zenodo,
+    title = {3DCP.data- A database framework for {3D} concrete printing},
+    author = {A. Deetman and D. Bos and S. Lucas and T. Salet and R. Wolfs},
+    publisher = {Zenodo},
+    year={2025},
+    doi={10.xxxx/xxxxx} % To do after first release. 
+    note = {Zenodo. doi:10.xxxx/xxxxx} % To do after first release. 
+}
+```
+
+All data records that follow this framework are also published on Zenodo. An overview is provided [here](docs/available_data_records.md). They can be cited using the DOI listed on their respective Zenodo pages.
+
 ## Open science statement
 
 We are committed to the principles of open science to ensure that our work can be reproduced and built upon by others, by sharing detailed methodologies, data, and results generated with the unique equipment that is available in our lab. To spread Open Science, we encourage others to do the same to create an (even more) open and collaborative scientific community. 
