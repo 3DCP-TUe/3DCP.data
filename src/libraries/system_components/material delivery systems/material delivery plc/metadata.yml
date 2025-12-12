@@ -54,128 +54,146 @@ io:
     type: analog input 4-20 mA active
     function: reserved for pressure sensor
     connector: Weipu SP2112/S4
-    filename: system_data.csv
-    header: material_io_ai0_ma
-    unit: mA
+    processed_system_data:
+      filename: system_data.csv
+      header: material_io_ai0_ma
+      unit: mA
   - name: AI1
     type: analog input 4-20 mA active
     function: reserved for pressure sensor
     connector: Weipu SP2112/S4
-    filename: system_data.csv
-    header: material_io_ai1_ma
-    unit: mA
+    processed_system_data:
+      filename: system_data.csv
+      header: material_io_ai1_ma
+      unit: mA
   - name: AI2
     type: analog input 4-20 mA active
     function: free-to-use
     connector: Weipu SP2112/S4
-    filename: system_data.csv
-    header: material_io_ai2_ma
-    unit: mA
+    processed_system_data:
+      filename: system_data.csv
+      header: material_io_ai2_ma
+      unit: mA
   - name: AI3
     type: analog input 4-20 mA active
     function: free-to-use
     connector: Weipu SP2112/S4
-    filename: system_data.csv
-    header: material_io_ai3_ma
-    unit: mA
+    processed_system_data:
+      filename: system_data.csv
+      header: material_io_ai3_ma
+      unit: mA
   - name: AI4
     type: analog input 4-20 mA active
     function: free-to-use
     connector: Weipu SP2112/S4
-    filename: system_data.csv
-    header: material_io_ai4_ma
-    unit: mA
+    processed_system_data:
+      filename: system_data.csv
+      header: material_io_ai4_ma
+      unit: mA
   - name: AI5
     type: analog input 4-20 mA active
     function: free-to-use
     connector: Weipu SP2112/S4
-    filename: system_data.csv
-    header: material_io_ai5_ma
-    unit: mA
+    processed_system_data:
+      filename: system_data.csv
+      header: material_io_ai5_ma
+      unit: mA
   - name: AO0
     type: analog output 4-20 mA passive
     function: free-to-use
     connector: Weipu SP2112/P5
-    filename: system_data.csv
-    header: material_io_ao0_ma
-    unit: mA
+    processed_system_data:
+      filename: system_data.csv
+      header: material_io_ao0_ma
+      unit: mA
   - name: AO1
     type: analog output 4-20 mA passive
     function: free-to-use
     connector: Weipu SP2112/P5
-    filename: system_data.csv
-    header: material_io_ao1_ma
-    unit: mA
+    processed_system_data:
+      filename: system_data.csv
+      header: material_io_ao1_ma
+      unit: mA
   - name: AO2
     type: analog output 4-20 mA passive
     function: free-to-use
     connector: Weipu SP2112/P5
-    filename: system_data.csv
-    header: material_io_ao2_ma
-    unit: mA
+    processed_system_data:
+      filename: system_data.csv
+      header: material_io_ao2_ma
+      unit: mA
   - name: AO3
     type: analog output 4-20 mA passive
     function: free-to-use
     connector: Weipu SP2112/P5
-    filename: system_data.csv
-    header: material_io_ao3_ma
-    unit: mA
+    processed_system_data:
+      filename: system_data.csv
+      header: material_io_ao3_ma
+      unit: mA
   - name: DI0
     type: digital input 24V DC
     function: free-to-use
     connector: Weipu SP2112/P3
-    filename: system_data.csv
-    header: material_io_di0_bool
-    unit: boolean
+    processed_system_data:
+      filename: system_data.csv
+      header: material_io_di0_bool
+      unit: boolean
   - name: DI1
     type: digital input 24V DC
     function: free-to-use
     connector: Weipu SP2112/P3
-    filename: system_data.csv
-    header: material_io_di1_bool
-    unit: boolean
+    processed_system_data:
+      filename: system_data.csv
+      header: material_io_di1_bool
+      unit: boolean
   - name: DI2
     type: digital input 24V DC
     function: free-to-use
     connector: Weipu SP2112/P3
-    filename: system_data.csv
-    header: material_io_di2_bool
-    unit: boolean
+    processed_system_data:
+      filename: system_data.csv
+      header: material_io_di2_bool
+      unit: boolean
   - name: DI3
     type: digital input 24V DC
     function: free-to-use
     connector: Weipu SP2112/P3
-    filename: system_data.csv
-    header: material_io_di3_bool
-    unit: boolean
+    processed_system_data:
+      filename: system_data.csv
+      header: material_io_di3_bool
+      unit: boolean
   - name: DO0
     type: digital output 24V DC
     function: free-to-use
     connector: Weipu SP2112/S3
-    filename: system_data.csv
-    header: material_io_do0_bool
-    unit: boolean
+    processed_system_data:
+      filename: system_data.csv
+      header: material_io_do0_bool
+      unit: boolean
   - name: DO1
     type: digital output 24V DC
     function: free-to-use
     connector: Weipu SP2112/S3
-    filename: system_data.csv
-    header: material_io_do1_bool
-    unit: boolean
+    processed_system_data:
+      filename: system_data.csv
+      header: material_io_do1_bool
+      unit: boolean
   - name: DO2
     type: digital output 24V DC
     function: free-to-use
     connector: Weipu SP2112/S3
-    filename: system_data.csv
-    header: material_io_do2_bool
-    unit: boolean
+    processed_system_data:
+      filename: system_data.csv
+      header: material_io_do2_bool
+      unit: boolean
   - name: DO3
     type: digital output 24V DC
     function: free-to-use
     connector: Weipu SP2112/S3
-    filename: system_data.csv
-    header: material_io_do3_bool
-    unit: boolean
+    processed_system_data:
+      filename: system_data.csv
+      header: material_io_do3_bool
+      unit: boolean
 
 processed_system_data:
   - name: free programmable parameter 0

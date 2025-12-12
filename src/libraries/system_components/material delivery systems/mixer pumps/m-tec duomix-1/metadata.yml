@@ -28,100 +28,114 @@ io:
     type: analog input 0-10V
     function: free-to-use
     connector: null
-    filename: system_data.csv
-    header: mtec_io_ai1_v
-    unit: V
+    processed_system_data:
+      filename: system_data.csv
+      header: mtec_io_ai1_v
+      unit: V
   - name: AI2
     type: analog input 0-10V
     function: free-to-use
     connector: null
-    filename: system_data.csv
-    header: mtec_io_ai2_v
-    unit: V
+    processed_system_data:
+      filename: system_data.csv
+      header: mtec_io_ai2_v
+      unit: V
   - name: AI3
     type: analog input 0-10V
     function: free-to-use
     connector: null
-    filename: system_data.csv
-    header: mtec_io_ai3_v
-    unit: V
+    processed_system_data:
+      filename: system_data.csv
+      header: mtec_io_ai3_v
+      unit: V
   - name: AI4
     type: analog input 4-20 mA active
     function: free-to-use
     connector: null
-    filename: system_data.csv
-    header: mtec_io_ai4_ma
-    unit: mA
+    processed_system_data:
+      filename: system_data.csv
+      header: mtec_io_ai4_ma
+      unit: mA
   - name: AI5
     type: analog input 4-20 mA active
     function: free-to-use
     connector: null
-    filename: system_data.csv
-    header: mtec_io_ai5_ma
-    unit: mA
+    processed_system_data:
+      filename: system_data.csv
+      header: mtec_io_ai5_ma
+      unit: mA
   - name: AO1
     type: analog output 4-20 mA passive
     function: free-to-use
     connector: null
-    filename: system_data.csv
-    header: mtec_io_ao1_ma
-    unit: mA
+    processed_system_data:
+      filename: system_data.csv
+      header: mtec_io_ao1_ma
+      unit: mA
   - name: AO2
     type: analog output 4-20 mA passive
     function: free-to-use
     connector: null
-    filename: system_data.csv
-    header: mtec_io_ao2_ma
-    unit: mA
+    processed_system_data:
+      filename: system_data.csv
+      header: mtec_io_ao2_ma
+      unit: mA
   - name: DI1
     type: digital input
     function: free-to-use
     connector: null
-    filename: system_data.csv
-    header: mtec_io_di1_bool
-    unit: boolean
+    processed_system_data:
+      filename: system_data.csv
+      header: mtec_io_di1_bool
+      unit: boolean
   - name: DI2
     type: digital input
     function: free-to-use
     connector: null
-    filename: system_data.csv
-    header: mtec_io_di2_bool
-    unit: boolean
+    processed_system_data:
+      filename: system_data.csv
+      header: mtec_io_di2_bool
+      unit: boolean
   - name: DI3
     type: digital input
     function: free-to-use
     connector: null
-    filename: system_data.csv
-    header: mtec_io_di3_bool
-    unit: boolean
+    processed_system_data:
+      filename: system_data.csv
+      header: mtec_io_di3_bool
+      unit: boolean
   - name: DI4
     type: digital input
     function: free-to-use
     connector: null
-    filename: system_data.csv
-    header: mtec_io_di4_bool
-    unit: boolean
+    processed_system_data:
+      filename: system_data.csv
+      header: mtec_io_di4_bool
+      unit: boolean
   - name: DI5
     type: digital input
     function: free-to-use
     connector: null
-    filename: system_data.csv
-    header: mtec_io_di5_bool
-    unit: boolean
+    processed_system_data:
+      filename: system_data.csv
+      header: mtec_io_di5_bool
+      unit: boolean
   - name: DO1
     type: digital output
     function: free-to-use
     connector: null
-    filename: system_data.csv
-    header: mtec_io_do1_bool
-    unit: boolean
+    processed_system_data:
+      filename: system_data.csv
+      header: mtec_io_do1_bool
+      unit: boolean
   - name: DO2
     type: digital output
     function: free-to-use
     connector: null
-    filename: system_data.csv
-    header: mtec_io_do2_bool
-    unit: boolean
+    processed_system_data:
+      filename: system_data.csv
+      header: mtec_io_do2_bool
+      unit: boolean
 
 processed_system_data:
   - name: source time

@@ -118,23 +118,26 @@ io:
     type: analog input 4-20 mA active
     function: free-to-use
     connector: Weipu SP2112/S4
-    filename: system_data.csv
-    header: material_io_ai3_ma
-    unit: mA
+    processed_system_data:
+      filename: system_data.csv
+      header: material_io_ai3_ma
+      unit: mA
   - name: AO0
     type: analog output 4-20 mA passive
     function: free-to-use
     connector: Weipu SP2112/P5
-    filename: system_data.csv
-    header: material_io_ao0_ma
-    unit: mA
+    processed_system_data:
+      filename: system_data.csv
+      header: material_io_ao0_ma
+      unit: mA
   - name: DO3
     type: digital output 24V DC
     function: free-to-use
     connector: Weipu SP2112/S3
-    filename: system_data.csv
-    header: material_io_do3_bool
-    unit: boolean
+    processed_system_data:
+      filename: system_data.csv
+      header: material_io_do3_bool
+      unit: boolean
 
 processed_system_data:
   - name: source time

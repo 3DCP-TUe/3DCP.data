@@ -92,8 +92,10 @@ io:
     type: analog input 4-20 mA active
     function: free-to-use
     connector: Weipu SP2112/S4
-    filename: system_data.csv
-    header: material_io_ai0_ma
+    processed_system_data:
+      filename: system_data.csv
+      header: material_io_ai0_ma
+      unit: mA
 ```
 
 In the metadata file of the pressure sensor (see snippet below), under `io`, the channel `pressure sensor` is listed that is connected to the channel `AI0` of the material delivery plc. From the pressure sensor metadata it can be read from the field `signal_limits` that the lower and upper limits of the signal are 4 and 20 mA, respectively, with corresponding process value readings of 0 and 25 bar. The field `interpolation` specifies that linear interpolation needs to be used to calculate the correct intermediate pressure readings from the stored signal. 
