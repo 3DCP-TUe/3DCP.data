@@ -45,7 +45,7 @@ function test_session_data_sources(session_folder, metadata_file)
     % -----------------------------
     % Validate existing folders against metadata
     metadata_folders = cellfun(@(ds) ds.folder, data_sources, 'UniformOutput', false);
-    all_ok = true;
+    all_ok = true; % flag to track critical failures
 
     for i = 1:numel(existing_folders)
         if ~ismember(existing_folders{i}, metadata_folders)
@@ -64,7 +64,6 @@ function test_session_data_sources(session_folder, metadata_file)
 
     % -----------------------------
     % Check each data source folder defined in metadata
-    all_ok = true; % flag to track critical failures
 
     for i = 1:numel(data_sources)
         ds = data_sources{i};
