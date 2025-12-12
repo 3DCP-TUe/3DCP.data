@@ -92,6 +92,7 @@ io:
     type: analog input 4-20 mA active
     function: free-to-use
     connector: Weipu SP2112/S4
+    filename: system_data.csv
     header: material_io_ai0_ma
 ```
 

@@ -104,71 +104,83 @@ io:
     type: analog input 4-20 mA active
     function: reserved for pressure sensor
     connector: Weipu SP2112/S4
+    filename: system_data.csv
     header: printhead_box1_io_ai0_ma
     unit: mA
   - name: BOX1_AI1
     type: analog input 4-20 mA active
     function: free-to-use
     connector: Weipu SP2112/S4
+    filename: system_data.csv
     header: printhead_box1_io_ai1_ma
     unit: mA
   - name: BOX1_AI2
     type: analog input 4-20 mA active
     function: free-to-use
     connector: Weipu SP2112/S4
+    filename: system_data.csv
     header: printhead_box1_io_ai2_ma
     unit: mA
   - name: BOX1_AI3
     type: analog input 4-20 mA active
     function: free-to-use
     connector: Weipu SP2112/S4
+    filename: system_data.csv
     header: printhead_box1_io_ai3_ma
     unit: mA
   - name: BOX1_AI4
     type: analog input 4-20 mA active
     function: free-to-use
     connector: Weipu SP2112/S4
+    filename: system_data.csv
     header: printhead_box1_io_ai4_ma
     unit: mA
   - name: BOX1_AI5
     type: analog input 4-20 mA active
     function: free-to-use
     connector: Weipu SP2112/S4
+    filename: system_data.csv
     header: printhead_box1_io_ai5_ma
     unit: mA
   - name: BOX1_AI6
     type: analog input 4-20 mA active
     function: free-to-use
     connector: Weipu SP2112/S4
+    filename: system_data.csv
     header: printhead_box1_io_ai6_ma
     unit: mA
   - name: BOX1_AI7
     type: analog input 4-20 mA active
     function: free-to-use
     connector: Weipu SP2112/S4
+    filename: system_data.csv
     header: printhead_box1_io_ai7_ma
     unit: mA
   - name: BOX2_AI0
     type: analog input 4-20 mA active
     function: reservered for temperature sensor
     connector: Weipu SP2112/S4
+    filename: system_data.csv
     header: printhead_box2_io_ai0_ma
     unit: mA
   - name: BOX2_AI1
     type: analog input 4-20 mA active
     function: free-to-use
     connector: Weipu SP2112/S4
+    filename: system_data.csv
     header: printhead_box2_io_ai1_ma
     unit: mA
   - name: BOX2_AI2
     type: analog input 4-20 mA active
     function: free-to-use
     connector: Weipu SP2112/S4
+    filename: system_data.csv
     header: printhead_box2_io_ai2_ma
     unit: mA
   - name: BOX2_AI3
     type: analog input 4-20 mA active
     function: free-to-use
     connector: Weipu SP2112/S4
+    filename: system_data.csv
     header: header: printhead_box2_io_ai3_ma
     unit: mA
