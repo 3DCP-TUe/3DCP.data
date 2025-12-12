@@ -38,6 +38,7 @@ data_sources:
   - name: "Videos"
     folder: "videos"
     optional: true
+    
 # ----------------------------------------------------------------------------
 
   - name: "Mass flow bucket test"
