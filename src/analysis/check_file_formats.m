@@ -25,18 +25,20 @@ addpath('lib');
 %% Check format of files in processed data folders of experiments
 
 % Folder path
-folder = uigetdir(); % Open a dialog to select the folder
+folder = uigetdir(); % Open a dialog to select the data record root folder
+%folder = 'D:\OneDrive - TU Eindhoven\99_Project Vivaldi\05 Data records\data_record_1_tracer_experiments\v1.x.x';
+%folder = 'D:\OneDrive - TU Eindhoven\99_Project Vivaldi\05 Data records\data_record_2_hardened_state_strength\v1.x.x';
+%folder = 'D:\OneDrive - TU Eindhoven\99_Project Vivaldi\05 Data records\data_record_3_indentation_test\v1.0.0';
+%folder = 'D:\OneDrive - TU Eindhoven\99_Project Vivaldi\05 Data records\data_record_4_frankenstein\v1.0.0';
 
 if folder == 0
     error('No folder selected.');
 end
 
-% This function finds the folders with experiments in session folders.
-% It checks the format of the processed data files, 
-% if all files exists and contain the required columns.
-% A provided folder can contain multiple data records, or
-% you can just select one data record, or an individual session.
-framework_toolkit.tests.check_format(folder)
+% Run test methods
+framework_toolkit.tests.test_data_record_root(folder);
+framework_toolkit.tests.test_session_folders(folder);
+framework_toolkit.tests.test_data_record_sessions(folder);
 
 %% End
 disp('End')

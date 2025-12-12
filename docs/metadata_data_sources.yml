@@ -15,6 +15,7 @@ data_sources:
 
   - name: "System data"
     folder: "system_data"
+    optional: false
     subfolders:
       - name: "processed_data"
       - name: "raw_data"
@@ -30,16 +31,18 @@ data_sources:
 
   - name: "Photos"
     folder: "photos"
+    optional: true
 
 # ----------------------------------------------------------------------------
 
   - name: "Videos"
     folder: "videos"
-
+    optional: true
 # ----------------------------------------------------------------------------
 
   - name: "Mass flow bucket test"
     folder: "mass_flow_bucket_test"
+    optional: true
     subfolders:
       - name: "processed_data"
         files:
@@ -70,6 +73,7 @@ data_sources:
 
   - name: "Slugs test"
     folder: "slugs_test"
+    optional: true
     subfolders:
       - name: "processed_data"
         files:
@@ -160,6 +164,7 @@ data_sources:
 
   - name: "Tracer experiments"
     folder: "tracer_experiment"
+    optional: true
     subfolders:
       - name: "processed_data"
         files:
@@ -250,7 +255,56 @@ data_sources:
                 unit: ""
                 optional: false
                 is_file:   
-                  format: "response_data.csv" # schema of the referenced response data file
+                  base_folder: ""
+                  columns:
+                    time:
+                      description: "Clock time"
+                      unit: "HH:mm:ss"
+                      optional: false
+                    time_response:
+                      description: "Time since start of experiment"
+                      unit: "HH:mm:ss"
+                      optional: false
+                    value:
+                      description: "Normalized response value"
+                      unit: ""
+                      optional: false
+                    R:
+                      description: "Red value (RGB color space)"
+                      unit: ""
+                      optional: false
+                    G:
+                      description: "Green value (RGB color space)"
+                      unit: ""
+                      optional: false
+                    B:
+                      description: "Blue value (RGB color space)"
+                      unit: ""
+                      optional: false
+                    X:
+                      description: "X value (CIE 1931 XYZ color space)"
+                      unit: ""
+                      optional: false
+                    Y:
+                      description: "Y value (CIE 1931 XYZ color space)"
+                      unit: ""
+                      optional: false
+                    Z:
+                      description: "Z value (CIE 1931 XYZ color space)"
+                      unit: ""
+                      optional: false
+                    L:
+                      description: "L* value (CIELAB color space)"
+                      unit: ""
+                      optional: false
+                    a:
+                      description: "a* value (CIELAB color space)"
+                      unit: ""
+                      optional: false
+                    b:
+                      description: "b* value (CIELAB color space)"
+                      unit: ""
+                      optional: false
               mean:
                 description: "Mean residence time"
                 unit: "HH:mm:ss"
@@ -283,57 +337,6 @@ data_sources:
                 description: "99th percentile of residence time"
                 unit: "HH:mm:ss"
                 optional: false
-          - name: "response_data.csv"
-            optional: false
-            columns:
-              time:
-                description: "Clock time"
-                unit: "HH:mm:ss"
-                optional: false
-              time_response:
-                description: "Time since start of experiment"
-                unit: "HH:mm:ss"
-                optional: false
-              value:
-                description: "Normalized response value"
-                unit: ""
-                optional: false
-              R:
-                description: "Red value (RGB color space)"
-                unit: ""
-                optional: false
-              G:
-                description: "Green value (RGB color space)"
-                unit: ""
-                optional: false
-              B:
-                description: "Blue value (RGB color space)"
-                unit: ""
-                optional: false
-              X:
-                description: "X value (CIE 1931 XYZ color space)"
-                unit: ""
-                optional: false
-              Y:
-                description: "Y value (CIE 1931 XYZ color space)"
-                unit: ""
-                optional: false
-              Z:
-                description: "Z value (CIE 1931 XYZ color space)"
-                unit: ""
-                optional: false
-              L:
-                description: "L* value (CIELAB color space)"
-                unit: ""
-                optional: false
-              a:
-                description: "a* value (CIELAB color space)"
-                unit: ""
-                optional: false
-              b:
-                description: "b* value (CIELAB color space)"
-                unit: ""
-                optional: false
       - name: "raw_data"
       - name: "scripts"
       - name: "setupinfo"
@@ -342,6 +345,7 @@ data_sources:
 
   - name: "Compression test"
     folder: "compression_test"
+    optional: true
     subfolders:
       - name: "processed_data"
         files:
@@ -404,6 +408,7 @@ data_sources:
 
   - name: "Flat punch indentation test (FPIT)"
     folder: "fpit"
+    optional: true
     subfolders:
       - name: "processed_data"
         files:
@@ -435,7 +440,20 @@ data_sources:
                 unit: "-"
                 optional: false
                 is_file:
-                  format: "sample_i.csv" # schema of the referenced sample file
+                  base_folder: ""
+                  columns:
+                    time:
+                      description: "Start time of the measurement"
+                      unit: "HH:mm:ss.SSS"
+                      optional: false
+                    load:
+                      description: "Applied indentation load"
+                      unit: "N"
+                      optional: false
+                    depth:
+                      description: "Indentation depth"
+                      unit: "mm"
+                      optional: false
               loading_rate:
                 description: "Applied loading rate"
                 unit: "mm/s"
@@ -460,21 +478,6 @@ data_sources:
                 description: "Derived friction angle from the indentation"
                 unit: "degrees"
                 optional: false
-          - name: "sample_i.csv"
-            optional: false
-            columns:
-              time:
-                description: "Start time of the measurement"
-                unit: "HH:mm:ss.SSS"
-                optional: false
-              load:
-                description: "Applied indentation load"
-                unit: "N"
-                optional: false
-              depth:
-                description: "Indentation depth"
-                unit: "mm"
-                optional: false
       - name: "raw_data"
       - name: "scripts"
       - name: "setupinfo"
@@ -484,6 +487,7 @@ data_sources:
 
   - name: "Pocket shear vane test"
     folder: "pocket_shear_vane"
+    optional: true
     subfolders:
       - name: "processed_data"
         files:
@@ -538,6 +542,7 @@ data_sources:
 
   - name: "Temperature: single-point"
     folder: "temperature_point"
+    optional: true
     subfolders:
       - name: "processed_data"
         files:
@@ -569,7 +574,20 @@ data_sources:
                 unit: "-"
                 optional: false
                 is_file:
-                  format: "sample_i.csv"
+                  base_folder: ""
+                  columns:
+                    time:
+                      description: "Time of measurement"
+                      unit: "HH:mm:ss.SSS"
+                      optional: false
+                    age:
+                      description: "Age of the material at measurement"
+                      unit: "HH:mm:ss.SSS"
+                      optional: false
+                    temperature:
+                      description: "Measured temperature"
+                      unit: "°C"
+                      optional: false
               position_x:
                 description: "X coordinate of the measurement point"
                 unit: "mm"
@@ -582,21 +600,6 @@ data_sources:
                 description: "Z coordinate of the measurement point"
                 unit: "mm"
                 optional: false
-          - name: "sample_i.csv"
-            optional: false
-            columns:
-              time:
-                description: "Time of measurement"
-                unit: "HH:mm:ss.SSS"
-                optional: false
-              age:
-                description: "Age of the material at measurement"
-                unit: "HH:mm:ss.SSS"
-                optional: false
-              temperature:
-                description: "Measured temperature"
-                unit: "°C"
-                optional: false
       - name: "raw_data"
       - name: "scripts"
       - name: "setupinfo"
@@ -605,6 +608,7 @@ data_sources:
 
   - name: "Ultrasonic wave transmission test (UWTT)"
     folder: "uwtt"
+    optional: true
     subfolders:
       - name: "processed_data"
         files:
@@ -636,34 +640,32 @@ data_sources:
                 unit: "-"
                 optional: false
                 is_file:
-                  format: "sample_i.csv"
-              distance:
-                description: "Distance of the measurement"
-                unit: "mm"
-                optional: false
-          - name: "sample_i.csv"
-            optional: false
-            columns:
-              time:
-                description: "Time of measurement"
-                unit: "HH:mm:ss"
-                optional: false
-              age:
-                description: "Age of the material at measurement"
-                unit: "HH:mm:ss"
-                optional: false
-              velocity:
-                description: "Ultrasonic wave velocity"
-                unit: "m/s"
-                optional: false
-              acceleration:
-                description: "Acceleration measured during test"
-                unit: "m/s²"
-                optional: false
-              temperature:
-                description: "Temperature of the material"
-                unit: "°C"
-                optional: false
+                  base_folder: ""
+                  columns:
+                    time:
+                      description: "Time of measurement"
+                      unit: "HH:mm:ss"
+                      optional: false
+                    age:
+                      description: "Age of the material at measurement"
+                      unit: "HH:mm:ss"
+                      optional: false
+                    velocity:
+                      description: "Ultrasonic wave velocity"
+                      unit: "m/s"
+                      optional: false
+                    acceleration:
+                      description: "Acceleration measured during test"
+                      unit: "m/s²"
+                      optional: false
+                    temperature:
+                      description: "Temperature of the material"
+                      unit: "°C"
+                      optional: false
+                distance:
+                  description: "Distance of the measurement"
+                  unit: "mm"
+                  optional: false
       - name: "raw_data"
       - name: "scripts"
       - name: "setupinfo"
@@ -672,6 +674,7 @@ data_sources:
 
   - name: "Unconfined uniaxial compression test (UUCT)"
     folder: "uuct"
+    optional: true
     subfolders:
       - name: "processed_data"
         files:
@@ -703,7 +706,24 @@ data_sources:
                 unit: "-"
                 optional: false
                 is_file:
-                  format: "sample_i.csv"
+                  base_folder: ""
+                  columns:
+                    time:
+                      description: "Time of measurement"
+                      unit: "HH:mm:ss.SSS"
+                      optional: false
+                    load:
+                      description: "Applied load"
+                      unit: "N"
+                      optional: false
+                    displacement:
+                      description: "Displacement during loading"
+                      unit: "mm"
+                      optional: false
+                    width:
+                      description: "Measured width of the sample"
+                      unit: "mm"
+                      optional: false
               loading_rate:
                 description: "Applied loading rate"
                 unit: "mm/s"
@@ -724,35 +744,6 @@ data_sources:
                 description: "Derived compressive strength"
                 unit: "MPa"
                 optional: false
-          - name: "sample_i.csv"
-            optional: false
-            columns:
-              time:
-                description: "Time of measurement"
-                unit: "HH:mm:ss.SSS"
-                optional: false
-              load:
-                description: "Applied load"
-                unit: "N"
-                optional: false
-              displacement:
-                description: "Displacement during loading"
-                unit: "mm"
-                optional: false
-              width:
-                description: "Measured width of the sample"
-                unit: "mm"
-                optional: false
       - name: "raw_data"
       - name: "scripts"
       - name: "setupinfo"
-
-
-
-
-
-
-
-
-
-
