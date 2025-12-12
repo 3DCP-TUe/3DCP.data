@@ -82,6 +82,13 @@ This repository contains the detailed information of the database framework, and
 
 All data records that follow this framework are also published on Zenodo. They can be cited using the DOI listed on their respective Zenodo pages. An overview is provided [here](docs/available_data_records.md). 
 
+## Funding
+
+This project could be developed and maintained with the financial support of the following projects:
+
+- The project _"Additive manufacturing of functional construction materials on-demand"_ (with project number 17895) of the research program _"Materialen NL: Challenges 2018"_ which is financed by the [Dutch Research Council](https://www.nwo.nl/en) (NWO).
+- The project _"Just Press Print - A multi-scale framework towards first time right 3D Concrete Printing"_ (with project number 20202) of the Veni talent program, which is financed by the [Dutch Research Council](https://www.nwo.nl/en) (NWO).
+
 ## Open science statement
 
 We are committed to the principles of open science to ensure that our work can be reproduced and built upon by others, by sharing detailed methodologies, data, and results generated with the unique equipment that is available in our lab. To spread Open Science, we encourage others to do the same to create an (even more) open and collaborative scientific community. 
