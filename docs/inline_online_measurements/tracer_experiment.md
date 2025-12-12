@@ -39,26 +39,26 @@ The `processed_data` folder contains the following files:
 
 **`overview.csv`** contains metadata and statistical summaries for each tracer experiment.
 
-| Column                   | Unit      | Description                                              |
-|--------------------------|-----------|----------------------------------------------------------|
-| `experiment`             | –         | Identifier for the experiment number                     |
-| `serie`                  | –         | Series number the experiment belongs to                  |
-| `input`                  | –         | Input type (`impulse`, `step_up`, `step_down`)           |
-| `material_component`     | –         | Material component used as tracer                        |
-| `system_component`       | –         | System component where tracer was added                  |
-| `system_component_inlet` | –         | Inlet of the system component                            |
-| `size`                   | g / g/min | Impulse size (g) or step size (g/min)                    |
-| `time_start`             | HH:mm:ss  | Start time of experiment                                 |
-| `time_end`               | HH:mm:ss  | End time of experiment                                   |
-| `file_name`              | –         | Filename containing the response data                    |
-| `mean`                   | HH:mm:ss  | Mean residence time                                      |
-| `variance`               | HH:mm:ss  | Variance of the residence time                           |
-| `std`                    | HH:mm:ss  | Standard deviation of the residence time                 |
-| `p1`                     | HH:mm:ss  | 1st percentile of the residence time                     |
-| `p5`                     | HH:mm:ss  | 5th percentile                                            |
-| `p50`                    | HH:mm:ss  | Median (50th percentile)                                 |
-| `p95`                    | HH:mm:ss  | 95th percentile                                          |
-| `p99`                    | HH:mm:ss  | 99th percentile                                          |
+| Column                   | Unit        | Description                                              |
+|--------------------------|-------------|----------------------------------------------------------|
+| `experiment`             | –           | Identifier for the experiment number                     |
+| `serie`                  | –           | Series number the experiment belongs to                  |
+| `input`                  | –           | Input type (`impulse`, `step_up`, `step_down`)           |
+| `material_component`     | –           | Material component used as tracer                        |
+| `system_component`       | –           | System component where tracer was added                  |
+| `system_component_inlet` | –           | Inlet of the system component                            |
+| `size`                   | g or g/min  | Impulse size (g) or step size (g/min)                    |
+| `time_start`             | HH:mm:ss    | Start time of experiment                                 |
+| `time_end`               | HH:mm:ss    | End time of experiment                                   |
+| `file_name`              | –           | Filename containing the response data                    |
+| `mean`                   | HH:mm:ss    | Mean residence time                                      |
+| `variance`               | HH:mm:ss    | Variance of the residence time                           |
+| `std`                    | HH:mm:ss    | Standard deviation of the residence time                 |
+| `p1`                     | HH:mm:ss    | 1st percentile of the residence time                     |
+| `p5`                     | HH:mm:ss    | 5th percentile                                           |
+| `p50`                    | HH:mm:ss    | Median (50th percentile)                                 |
+| `p95`                    | HH:mm:ss    | 95th percentile                                          |
+| `p99`                    | HH:mm:ss    | 99th percentile                                          |
 
 ---
 
