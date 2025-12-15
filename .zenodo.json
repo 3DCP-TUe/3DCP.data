@@ -32,8 +32,8 @@
 
 	"title": "3DCP.data: A database framework for 3D concrete printing",
 
-	"description": "This record contains the template and setup information library for 3DCP.data. The aim of this project is to collect experimental data about 3D concrete printing in a structured way and distribute this data to the community. This record includes the system library of the equipment at TU/e and the templates for data records and software packages.",
-
+	"description": "This record contains the templates, libraries, and setup information for the 3DCP.data database framework, developed at Eindhoven University of Technology (TU/e). The framework enables structured collection and storage of experimental data from 3D concrete printing processes. It includes material and system component libraries, templates for constructing data records, and software packages to support data processing and analysis. This record is intended to help the community access, share, and reuse 3D concrete printing data in a standardized format.",
+	
 	"keywords": [
 		"digital fabrication with concrete",
 		"3d concrete printing",
