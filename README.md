@@ -1,7 +1,6 @@
 # 3DCP.data
 
 <p align="left"> 
-  <img src="https://img.shields.io/github/v/release/3DCP-TUe/3DCP.data?label=stable">
   <img src="https://img.shields.io/github/v/release/3DCP-TUe/3DCP.data?label=latest&include_prereleases">
 </p>
 
