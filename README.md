@@ -69,10 +69,6 @@ x.0.x ---> MINOR version: Functionality added in a backward-compatible manner; f
 x.x.0 ---> PATCH version: Small backward-compatible changes; for example, small corrections in a component property.
 ```
 
-## Contact information
-
-If you have any questions or comments about this project, please open an issue on the repository’s issue page. This can include questions about the content, such as missing information, and the data structure. We encourage you to open an issue instead of sending us emails to help establish an open community. By keeping discussions open, everyone can contribute and see the feedback and questions of others. In addition to this, please see our open science statement below.
-
 ## How to cite
 
 The database framework and its underlying concept are described in a journal paper. For generic references to the database framework, this paper can be cited. The BibTeX entry is provided below:
@@ -108,6 +104,10 @@ This project could be developed and maintained with the financial support of the
 
 - The project _"Additive manufacturing of functional construction materials on-demand"_ (with project number 17895) of the research program _"Materialen NL: Challenges 2018"_ which is financed by the [Dutch Research Council](https://www.nwo.nl/en) (NWO).
 - The project _"Just Press Print - A multi-scale framework towards first time right 3D Concrete Printing"_ (with project number 20202) of the Veni talent program, which is financed by the [Dutch Research Council](https://www.nwo.nl/en) (NWO).
+
+## Contact information
+
+If you have any questions or comments about this project, please open an issue on the repository’s issue page. This can include questions about the content, such as missing information, and the data structure. We encourage you to open an issue instead of sending us emails to help establish an open community. By keeping discussions open, everyone can contribute and see the feedback and questions of others. In addition to this, please see our open science statement below.
 
 ## Open science statement
 
