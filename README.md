@@ -43,6 +43,22 @@ In the following README, the structure and more detailed information of the vari
 
 [**utils**](utils): This folder contains helper files and resources used throughout the project, such as figures for README files and the scripts used to generate them.
 
+## Framework development rules and workflow
+
+This section describes the rules and workflow for developing the 3DCP.data framework.
+
+- **main**: Protected branch reflecting the latest stable framework version.  
+- **next-release**: Active development branch for _finalized_ updates, improvements, and new features.
+
+We use the following workflow:
+
+1. Implement and test changes in your own branch or fork.  
+2. Once fully working, open a pull request to the `next-release` branch.  
+3. Changes will be reviewed and merged if approved.  
+4. The `next-release` branch is merged into `main` when a new release is made.
+
+Both `main` and `next-release` are always fully functional, with `main` always reflecting the latest released version.
+
 ## Version numbering
 
 This project uses the following versioning scheme: 
