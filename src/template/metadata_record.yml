@@ -25,7 +25,7 @@ attr:
         role: Other
     keywords: [3dcp, pressure, temperature]
     languages: [English]
-    version: 1.0.0
+    version: 1.0.0                # version number of this data record
     publisher: Zenodo
   funding:
     grants: 
@@ -45,3 +45,8 @@ attr:
     - reference_string: ....
     - reference_string: ....
     - reference_string: ....
+  framework_information:
+    name: 3DCP.data
+    version: 1.0.0
+    url: https://github.com/3dCP-TUe/DFC.data/
+    description: Database framework used to structure this data record.
