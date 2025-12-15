@@ -33,10 +33,14 @@ attr:
         number: 17895
         title: Additive manufacturing of functional construction materials on-demand
   related_works:
+    - relation: Is described by
+      indentifier: 10.1016/j.rineng.2025.108669
+      scheme: DOI
+      resource_type: Publication / Journal article
     - relation: Is supplement to
       indentifier: 
       scheme: DOI
-      resource_type: Publication / Journal
+      resource_type: Publication / Journal article
   references:
     - reference_string: ....
     - reference_string: ....
