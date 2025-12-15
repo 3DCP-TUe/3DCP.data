@@ -59,6 +59,8 @@ We use the following workflow:
 
 Both `main` and `next-release` are always fully functional, with `main` always reflecting the latest released version.
 
+> **Note:** After each release, this repository is automatically mirrored to Zenodo. However, you need to manually update the funding fields and fill in the project licenses fields (CC-BY-SA and GPL v3.0). These cannot be defined in the `.zenodo.json` file and transferred automatically.
+
 ## Version numbering
 
 This project uses the following versioning scheme: 
