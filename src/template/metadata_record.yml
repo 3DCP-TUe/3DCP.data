@@ -38,7 +38,7 @@ attr:
       scheme: DOI
       resource_type: Publication / Journal article
     - relation: Is supplement to
-      indentifier: 
+      indentifier: ...
       scheme: DOI
       resource_type: Publication / Journal article
   references:
