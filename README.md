@@ -2,6 +2,7 @@
 
 <p align="left"> 
   <img src="https://img.shields.io/github/v/release/3DCP-TUe/3DCP.data?label=latest&include_prereleases">
+  <a href="https://zenodo.org/doi/10.5281/zenodo.17939494"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.17939494.svg" alt="DOI"></a> 
 </p>
 
 ## Introduction 
@@ -93,8 +94,8 @@ This repository contains the detailed information of the database framework, and
     author = {A. Deetman and D. Bos and S. Lucas and T. Salet and R. Wolfs},
     publisher = {Zenodo},
     year = {2025},
-    doi = {10.xxxx/xxxxx} % To do after first release. 
-    note = {Zenodo. doi:10.xxxx/xxxxx} % To do after first release. 
+    doi = {10.5281/zenodo.17939494},
+    note = {Zenodo. doi:10.5281/zenodo.17939494}
 }
 ```
 
