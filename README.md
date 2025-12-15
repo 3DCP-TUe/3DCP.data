@@ -1,5 +1,10 @@
 # 3DCP.data
 
+<p align="left"> 
+  <img src="https://img.shields.io/github/v/release/3DCP-TUe/3DCP.data?label=stable">
+  <img src="https://img.shields.io/github/v/release/3DCP-TUe/3DCP.data?label=latest&include_prereleases">
+</p>
+
 ## Introduction 
 
 This repository contains the templates, libraries, and structure information for _3DCP.data - A database framework for 3D concrete printing_. The aim of this project is to collect experimental data 3D concrete printing processes in a structured way and distribute this data to the community. This repository includes the component libraries of the equipment and materials at TU/e and the templates for data records and software packages. The corresponding paper describing the database framework is published in _Results in Engineering_ and explains the concept behind the framework while providing example use cases. The paper can be found [here](https://doi.org/10.1016/j.rineng.2025.108669). 
