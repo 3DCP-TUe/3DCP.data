@@ -45,5 +45,13 @@
 		"data collection"
 	],
 
-	"upload_type": "dataset"
+	"upload_type": "dataset",
+
+	"related_identifiers": [
+		{
+			"identifier": "https://doi.org/10.1016/j.rineng.2025.108669",
+			"relation": "isDescribedBy",
+			"resource_type": "publication-article"
+		}
+    ]
 }
