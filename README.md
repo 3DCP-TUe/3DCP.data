@@ -91,7 +91,7 @@ This repository contains the detailed information of the database framework, and
 ```bibtex
 @misc{3DCPdata_Zenodo,
     title = {3DCP.data - A database framework for {3D} concrete printing},
-    author = {A. Deetman and D. Bos and S. Lucas and T. Salet and R. Wolfs},
+    author = {A. Deetman and D. Bos and S. S. Lucas and T. Salet and R. Wolfs},
     publisher = {Zenodo},
     year = {2025},
     doi = {10.5281/zenodo.17939494},
