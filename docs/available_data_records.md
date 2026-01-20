@@ -22,7 +22,7 @@ Dataset that contains the data and scripts that were used in the publication: "C
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17192626.svg)](https://doi.org/10.5281/zenodo.17192626)
 
-This dataset contains the experimental data used in the paper entitled “Characterization of early‑age elastic–plastic properties of 3D printed materials using indentation testing.” The data was collected across three concrete printing sessions, during which a printable mortar was sampled directly from the printing system and subsequently characterized. The dataset includes both in‑line process measurements and results from the off‑line mechanical tests used to determine the early‑age elastic-plastic properties of the material.
+This dataset contains the experimental data used in the paper entitled “Characterization of early‑age elastic–plastic properties of 3D printed materials using indentation testing.” The data was collected during three concrete printing sessions, during which a printable mortar was sampled directly from the printing system and subsequently characterized. The dataset includes both in‑line process measurements and results from the off‑line mechanical tests used to determine the early‑age elastic-plastic properties of the material.
 
 Across all three printing sessions, flat punch indentation tests were conducted on hemispherical samples to derive the elastic modulus, cohesion, and internal friction angle of the printable material. In sessions two and three, unconfined compression tests were conducted on cylindrical specimens to validate the developed indentation test. In addition, ultrasonic wave transmission tests were carried out during all printing sessions as a quality‑control measure.
 
