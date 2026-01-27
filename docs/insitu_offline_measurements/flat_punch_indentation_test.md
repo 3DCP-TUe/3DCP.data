@@ -4,7 +4,7 @@ Data source folder: `fpit`
 
 ## Description of the data source
 
-The FPIT is a compression test where a cylindrical flat punch indenter is pressed into the surface of a significantly larger molded sample. As for the UUCT, this is a single-point destructive test used to assess the early-age mechanical properties of the material by testing several samples at different ages. From the measured indentation response, the stiffness modulus, cohesion, and friction angle can be derived. The experiment can be conducted in similar test rigs, identical to those used for the UUCT, as only the indentation load and depth need to be recorded. The theory and methodology to derive the mechanical properties from the indentation response are described in detail in Deetman & Suiker (publication in preperation). 
+The FPIT is a compression test where a cylindrical flat punch indenter is pressed into the surface of a significantly larger molded sample. As for the UUCT, this is a single-point destructive test used to assess the early-age mechanical properties of the material by testing several samples at different ages. From the measured indentation response, the stiffness modulus, cohesion, and friction angle can be derived. The experiment can be conducted in similar test rigs, identical to those used for the UUCT, as only the indentation load and depth need to be recorded. The theory and methodology to derive the mechanical properties from the indentation response are described in detail in [Deetman & Suiker (2025)](https://doi.org/10.1016/j.ijmecsci.2025.111141).
 
 ## Data collection
 

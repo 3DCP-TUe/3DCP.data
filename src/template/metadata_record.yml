@@ -48,5 +48,5 @@ attr:
   framework_information:
     name: 3DCP.data
     version: 1.0.0
-    url: https://github.com/3dCP-TUe/DFC.data/
+    url: https://github.com/3DCP-TUe/3DCP.data
     description: Database framework used to structure this data record.
