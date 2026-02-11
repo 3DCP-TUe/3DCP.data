@@ -1,0 +1,63 @@
+calibration:
+  id: cal-1
+  date: 2025-02-06
+
+operators:
+  - name: Arjen Deetman
+  - name: Georgia Skroumpelou
+
+system_component:
+  id: liquid dosing watson marlow-1   # reference ID only
+
+material_component:
+  id: pigment-slurry-red-2            # reference ID only
+  supplied_to: dosing tank-1
+  
+system_layout:
+  - component: dosing tank-2
+    connected_to:
+      - component: tube 6-l1000-4
+  - component: tube 6-l1000-4
+    connected_to:
+      - component: liquid dosing watson marlow-1
+  - component: liquid dosing watson marlow-1
+    connected_to: 
+      - component: tube 6-l2000-2
+  - component: tube 6-l2000-2
+
+procedure:
+  description: |
+    The liquid dosing system has a variable frequency. The calibration was
+    performed by collecting the material directly from the dosing pump using
+    a short hose. The material was pumped for 1 minute for different
+    frequencies. The set signal (in current) and the measured mass during
+    the 1-minute period were recorded.
+
+outputs:
+  - filename: data.csv
+    columns:
+      - name: current
+        description: Set frequency as current
+        unit: mA
+      - name: mass_flowrate
+        description: Resulting mean mass flowrate
+        unit: g/min
+
+models:
+  - name: flowrate-frequency-fit
+    type: linear
+    outputs: 
+      - variable: y
+        name: mass_flowrate
+        unit: g/min
+    inputs: 
+      - variable: x
+        name: current
+        domain: [4, 9]
+        unit: mA
+    equation: "y = slope * x + intercept"
+    parameters:
+      slope: 44.221
+      intercept: -174.29
+    quality:
+      r2: 0.9994

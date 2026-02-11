@@ -1,0 +1,61 @@
+calibration:
+  id: cal-1
+  date: 2024-10-09
+
+operators:
+  - name: Carolina Maciel Rangel
+
+system_component:
+  id: solid dosing van-beek-1      # reference ID only
+
+material_component:
+  id: presoaked-cork-1             # reference ID only
+  supplied_to: solid dosing van-beek-1 
+
+system_layout:
+  - component: solid dosing van-beek-1
+  - component: dosing screw van-beek-1
+    inserted_in: solid dosing van-beek-1
+
+procedure:
+  description: |
+    The dosing screw of this volumetric dosing system has a variable frequency.
+    The calibration was performed by collecting the material directly from the
+    system outlet. The collected mass, the runtime of the dosing screw, and the
+    frequency of the dosing screw (as current) were recorded. Runtime was
+    measured digitally using Node-RED 3DSeeP.
+
+outputs:
+  - filename: data.csv
+    columns:
+      - name: runtime
+        description: Duration of the dosing screw operation
+        unit: s
+      - name: current
+        description: Set frequency as current
+        unit: mA
+      - name: mass
+        description: Material mass collected during runtime
+        unit: g
+      - name: mass_flowrate
+        description: Resulting mean mass flowrate
+        unit: kg/min
+
+models:
+  - name: flowrate-frequency-fit
+    type: linear
+    outputs: 
+      - variable: y
+        name: mass_flowrate
+        unit: kg/min
+    inputs: 
+      - variable: x
+        name: current
+        domain: [10, 20]
+        unit: mA
+    equation: "y = slope * x + intercept"
+    parameters:
+      slope: 0.1314
+      intercept: -0.5981
+    quality:
+      r2: 0.9933
