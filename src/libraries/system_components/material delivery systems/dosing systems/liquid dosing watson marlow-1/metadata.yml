@@ -17,7 +17,7 @@ couplings:
 io:
   - name: speed
     type: analog input 4-20 mA passive
-    function: remote control dosing screw velocity
+    function: remote control pump frequency
     signal_limits: [4, 20]
     reading_limits: null # For example [10, 30] -> 4 mA correspond to 10 kg/min and 20 mA to 30 kg/min, linear interpolation between values
     interpolation: linear
