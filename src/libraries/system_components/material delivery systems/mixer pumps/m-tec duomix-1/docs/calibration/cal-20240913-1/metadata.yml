@@ -59,10 +59,10 @@ models:
         domain: [10, 32]
     equation: "y = slope * x + intercept"
     parameters:
-      slope: 0.1884
-      intercept: 0.6786
+      slope: 0.1893
+      intercept: 0.6600
     quality:
-      r2: 0.997
+      adjrsquare: 0.997
   - name: flowrate-valve-fit-cold
     type: linear
     outputs: 
@@ -76,10 +76,10 @@ models:
         domain: [10, 32]
     equation: "y = slope * x + intercept"
     parameters:
-      slope: 0.1903
-      intercept: 0.6935
+      slope: 0.1912
+      intercept: 0.6745
     quality:
-      r2: 0.9963
+      adjrsquare: 0.996
   - name: valve-flowrate-fit-room-temperature
     type: linear
     outputs: 
@@ -93,10 +93,10 @@ models:
         domain: [2.5, 6.7]
     equation: "y = slope * x + intercept"
     parameters:
-      slope: 5.2926
-      intercept: -3.5298
+      slope: 5.2677
+      intercept: -3.4159
     quality:
-      r2: 0.997
+      adjrsquare: 0.997
   - name: valve-flowrate-fit-cold
     type: linear
     outputs: 
@@ -110,7 +110,7 @@ models:
         domain: [2.5, 6.7]
     equation: "y = slope * x + intercept"
     parameters:
-      slope: 5.2366
-      intercept: -3.5565
+      slope: 5.2127
+      intercept: -3.4471
     quality:
-      r2: 0.9963
+      adjrsquare: 0.996

@@ -58,4 +58,4 @@ models:
       slope: 0.1314
       intercept: -0.5981
     quality:
-      r2: 0.9933
+      adjrsquare: 0.9933

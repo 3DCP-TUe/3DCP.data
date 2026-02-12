@@ -50,8 +50,8 @@ models:
     output:
       name: mass_flowrate
       unit: kg/min
-      mean: 15.2
-      std: 0.3
+      mean: 15.21
+      std: 0.318
   - name: runtime-effect
     type: linear
     outputs: 
@@ -65,7 +65,7 @@ models:
         domain: [2, 15]
     equation: "y = slope * x + intercept"
     parameters:
-      slope: -0.0272
+      slope: -0.0271
       intercept: 15.442
     quality:
-      r2: 0.0962
+      adjrsquare: 0.072

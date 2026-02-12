@@ -78,9 +78,9 @@ models:
     equation: "y = slope * x + intercept"
     parameters:
       slope: 0.0522
-      intercept: 0.0
+      intercept: 0.0858
     quality:
-      r2: 1.00
+      adjrsquare: 1.00
 
 # Sensor metadata is copied from the component definition.
 # These entries record the exact sensor configuration used during calibration.
