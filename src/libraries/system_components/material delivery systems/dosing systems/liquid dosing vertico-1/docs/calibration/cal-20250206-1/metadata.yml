@@ -1,5 +1,5 @@
 calibration:
-  id: cal-1
+  id: cal-20250206-1
   date: 2025-02-06
 
 operators:
@@ -26,6 +26,7 @@ system_layout:
   - component: tube 6-l1000-2
     connected_to: 
       - component: liquid dosing bronkhorst-1
+        inlet: pump fluid inlet
   - component: liquid dosing bronkhorst-1
     connected_to: 
       - component: tube 6-l1000-3
