@@ -7,7 +7,10 @@ attr:
 
 couplings:
   inlets:
-    - name: fluid inlet
+    - name: pump fluid inlet
+      type: push-in fitting
+      size: 6
+    - name: bypass fluid inlet
       type: push-in fitting
       size: 6
   outlets:
