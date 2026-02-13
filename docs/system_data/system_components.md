@@ -35,7 +35,7 @@ To add a new component, browse the [system components library](/src/libraries/sy
 > - **Dosing systems**: Calibration curves (e.g., motor frequency vs. flow rate) depend on the material being fed.
 > - **Free programmable parameters**: Some devices (e.g., gantry robot, printhead plc, material delivery plc) have free programmable parameters (readable and writable via OPC UA). Their use depends on the application. Always check and update the function description of these parameters in the `processed_system_data` section of the system component.   
 
-## Calibation data
+## Calibration data
 
 Calibration data is typically used for calibrating dosing systems that feed material to the printing system. Each calibration is stored in its own directory in the docs folder of a system component and contains:
 
@@ -56,8 +56,9 @@ The calibration metadata file is a YAML file with the following sections:
 - **outputs:** Description of the raw calibration data files stored alongside the metadata file.
 - **models:** Resulting fitted models (e.g. linear relations between valve position and flowrate).
 
-Existing calibration files that be used as template can be found [here](/src/libraries/system_components/material delivery systems/dosing systems/liquid dosing vertico-1/docs/calibration/cal-20250206-1), [here](/src/libraries/system_components/material delivery systems/dosing systems/liquid dosing watson marlow-1/docs/calibration/cal-20250206-1), [here](/src/libraries/system_components/material delivery systems/dosing systems/solid dosing van-beek-1/calibration/cal-20241009-1), 
-[here](/src/libraries/system_components/material delivery systems/mixer pumps/m-tec duomix-1/docs/calibration/cal-20240913-1), and [here](src/libraries/system_components/material delivery systems/mixer pumps/m-tec duomix-1/docs/calibration/cal-20250212-1).
+
+Existing calibration files that can be used as templates can be found [here](/src/libraries/system_components/material%20delivery%20systems/dosing%20systems/liquid%20dosing%20vertico-1/docs/calibration/cal-20250206-1),  [here](/src/libraries/system_components/material%20delivery%20systems/dosing%20systems/liquid%20dosing%20watson%20marlow-1/docs/calibration/cal-20250206-1), [here](/src/libraries/system_components/material%20delivery%20systems/dosing%20systems/solid%20dosing%20van-beek-1/calibration/cal-20241009-1), [here](/src/libraries/system_components/material%20delivery%20systems/mixer%20pumps/m-tec%20duomix-1/docs/calibration/cal-20240913-1), and [here](/src/libraries/system_components/material%20delivery%20systems/mixer%20pumps/m-tec%20duomix-1/docs/calibration/cal-20250212-1).
+
 
 ## Library
 
