@@ -1,0 +1,33 @@
+attr:
+  class: conduit
+  name: elbow mc35f-mc35m-a90-2
+  description: Rigid 90 degrees connection from mortar coupling to mortar coupling. 
+
+dimensions:
+  length: 199
+  volume: 0.191
+
+couplings:
+  inlets:
+    - name: concrete inlet
+      type: system 23.5 female mortar coupling
+      size: 35
+      connection: 1.25" female BSP
+  outlets:
+    - name: concrete outlet
+      type: system 23.5 male mortar coupling
+      size: 35
+      connection: 1.25" female BSP
+
+parts:
+  - name: mortar coupling inlet
+    type: system 23.5 female mortar coupling
+    size: 35
+    connection: 1.25" female BSP
+  - name: elbow
+    type: steel pipe Fitting, 90 degrees elbow
+    connection: 1.25" male BSP x 1.25" male BSP
+  - name: mortar coupling outlet
+    type: system 23.5 male mortar coupling
+    size: 35
+    connection: 1.25" female BSP
