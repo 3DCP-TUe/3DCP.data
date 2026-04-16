@@ -1,0 +1,17 @@
+attr:
+  class: binders
+  subclass: cementitious binders
+  name: cement-i-42.5-n
+  friendly_name: Cement type I 42.5 N
+  description: -
+
+general_properties:
+  supplier: -
+  state: dry
+  blend: false
+
+physical_properties:
+  color: unknown
+  density: unknown
+  bulk_density: unknown
+  particle_size: unknown

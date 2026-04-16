@@ -1,0 +1,17 @@
+attr:
+  class: binders
+  subclass: supplementary cementitious materials
+  name: silica-fume-1
+  friendly_name: Silica fume
+  description: -
+
+general_properties:
+  supplier: unknown
+  state: dry # dry or wet
+  blend: false
+
+physical_properties:
+  color: unknown
+  density: unknown
+  bulk_density: unknown
+  particle_size: unknown

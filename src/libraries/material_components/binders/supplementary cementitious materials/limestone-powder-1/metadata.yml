@@ -1,7 +1,7 @@
 attr:
   class: binders
   subclass: supplementary cementitious materials
-  name: limestone-powder
+  name: limestone-powder-1
   friendly_name: Limestone powder
   description: Finely ground limestone (calcium carbonate) used as a mineral filler in concrete and mortar.
   note: Typically used to improve workability and reduce cement content.

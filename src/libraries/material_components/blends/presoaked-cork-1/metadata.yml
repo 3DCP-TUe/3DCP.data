@@ -1,0 +1,24 @@
+attr:
+  class: blends
+  name: presoaked-cork-1
+  friendly_name: Pre-soaked cork
+  description: Blend of cork and water
+
+general_properties:
+  supplier: Self-made
+  state: wet  # dry or wet
+  blend: true
+
+blend:
+  - component:
+      name: tap water
+      mass_fraction: confidential
+  - component:
+      name: cork-500-1000
+      mass_fraction: confidential
+  - component:
+      name: cork-1000-2000
+      mass_fraction: confidential
+  - component:
+      name: cork-2000-4000
+      mass_fraction: confidential

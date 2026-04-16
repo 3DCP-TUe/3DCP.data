@@ -1,0 +1,16 @@
+attr:
+  class: aggregates
+  name: sand-53-500
+  friendly_name: Sand 53-500 um
+  description: Fine sand 53-500 um
+
+general_properties:
+  supplier: -
+  state: dry
+  blend: false
+
+physical_properties:
+  color: unknown
+  density: unknown
+  bulk_density: unknown
+  particle_size: unknown

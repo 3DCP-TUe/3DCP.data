@@ -1,6 +1,6 @@
 attr:
   class: blends
-  name: example blend
+  name: example-blend
   friendly_name: Example blend
   description: An example of how to define a blend of multiple components.
   note: The sum of mass fractions of all components must equal 1.0.
@@ -12,11 +12,11 @@ general_properties:
 
 blend:
   - component:
-      name: ordinary-portland-cement type i # refers to another material component
-      mass_fraction: 0.70
+      name: cement-i-42.5-n # refers to another material component
+      mass_fraction: 0.70 
   - component:
-      name: limestone-powder
+      name: limestone-powder-1
       mass_fraction: 0.22
   - component:
-      name: silica-fume
+      name: silica-fume-1
       mass_fraction: 0.08

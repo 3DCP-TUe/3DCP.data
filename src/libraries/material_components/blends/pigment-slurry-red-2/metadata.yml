@@ -1,0 +1,16 @@
+attr:
+  class: blends
+  name: pigment-slurry-red-1
+  friendly_name: Red pigment slurry
+  description: Pigment slurry made from red iron oxide pigment. 
+  note: Provided and prepared by LANXESS Deutschland GmbH
+
+general_properties:
+  supplier: LANXESS Deutschland GmbH
+  state: wet  # dry or wet
+  blend: true
+
+blend:
+  - component:
+      name: confidential
+      mass_fraction: confidential 

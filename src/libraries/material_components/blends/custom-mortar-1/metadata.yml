@@ -1,0 +1,27 @@
+attr:
+  class: blends
+  name: custom-mortar-1
+  friendly_name: Custom mortar
+  description: Custom mortar designed by Carolina Maciel Rangel. Blended on large scale and provided by Saint-Gobain Weber-Beamix. 
+
+general_properties:
+  supplier: Saint-Gobain Weber-Beamix
+  state: dry  # dry or wet
+  blend: true
+
+blend:
+  - component:
+      name: cement-i-42.5-n
+      mass_fraction: 0.219
+  - component:
+      name: blast-furnace-slag-1
+      mass_fraction: 0.438
+  - component:
+      name: silica-fume-1
+      mass_fraction: 0.073
+  - component:
+      name: limestone-powder-1
+      mass_fraction: 0.146
+  - component:
+      name: sand-53-500
+      mass_fraction: 0.124

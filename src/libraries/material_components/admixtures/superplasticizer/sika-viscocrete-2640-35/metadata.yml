@@ -1,0 +1,15 @@
+attr:
+  class: admixtures
+  subclass: superplasticizer
+  name: sika-viscocrete-2640-35
+  friendly_name: Sika ViscoCrete-2640 con. 35% SPL
+  description: Second-generation high-range water reducer, polycarboxylate ether-based liquid superplasticizer (SP) with 35 % solid content. 
+
+general_properties:
+  supplier: -
+  state: wet
+  blend: false
+
+physical_properties:
+  color: unknown
+  density: unknown

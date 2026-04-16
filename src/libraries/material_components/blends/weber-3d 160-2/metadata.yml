@@ -13,4 +13,4 @@ general_properties:
 blend:
   - component:
     - name: confidential
-    - mass_fraction: confidential 
+    - mass_fraction: confidential
