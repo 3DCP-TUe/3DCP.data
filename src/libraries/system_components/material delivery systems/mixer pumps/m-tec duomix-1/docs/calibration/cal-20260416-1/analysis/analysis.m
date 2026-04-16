@@ -37,7 +37,7 @@ fig = default_layout();
 
 % Plot data
 x = data.runtime;
-y = data.mass_flowrate;
+y = data.mass_flowrate*60/1000;
 plot(x, y, '.', 'Color', 'k', 'MarkerSize', 24)
 
 % Fit trend line
@@ -49,19 +49,19 @@ plot(x_fit, y_fit, '--k', 'LineWidth', 1.5)
 % Add to figure
 eqn_text = sprintf('$y = %.4f \\cdot x + %.4f$', f.p1, f.p2);
 r2_text = sprintf('$R^2_{adj} = %.3f$', g.adjrsquare);
-text(0.5, 0.425, eqn_text, 'Units', 'normalized', 'Interpreter', 'latex', 'FontSize', 18, 'HorizontalAlignment', 'center');
-text(0.5, 0.325, r2_text, 'Units', 'normalized', 'Interpreter', 'latex', 'FontSize', 18, 'HorizontalAlignment', 'center');
+text(0.5, 0.666-0.111, eqn_text, 'Units', 'normalized', 'Interpreter', 'latex', 'FontSize', 18, 'HorizontalAlignment', 'center');
+text(0.5, 0.666-0.222, r2_text, 'Units', 'normalized', 'Interpreter', 'latex', 'FontSize', 18, 'HorizontalAlignment', 'center');
 
 % Mean and std
-text_mean = sprintf('$\\mu = %.2f$', mean(data.mass_flowrate));
-text_std = sprintf('$\\sigma = %.3f$', std(data.mass_flowrate));
-text(0.5, 0.425-0.25, text_mean, 'Units', 'normalized', 'Interpreter', 'latex', 'FontSize', 18, 'HorizontalAlignment', 'center');
-text(0.5, 0.325-0.25, text_std, 'Units', 'normalized', 'Interpreter', 'latex', 'FontSize', 18, 'HorizontalAlignment', 'center');
+text_mean = sprintf('$\\mu = %.2f$', mean(y));
+text_std = sprintf('$\\sigma = %.3f$', std(y));
+text(0.5, 0.333-0.111, text_mean, 'Units', 'normalized', 'Interpreter', 'latex', 'FontSize', 18, 'HorizontalAlignment', 'center');
+text(0.5, 0.333-0.222, text_std, 'Units', 'normalized', 'Interpreter', 'latex', 'FontSize', 18, 'HorizontalAlignment', 'center');
 
 
 % Layout
 xlim([0 20])
-ylim([0 20])
+ylim([0 60])
 xlabel('Runtime [seconds]', 'interpreter', 'latex');
 ylabel('Mass flowrate [kg/min]', 'interpreter', 'latex');
 
