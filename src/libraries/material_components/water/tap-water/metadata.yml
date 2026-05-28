@@ -1,6 +1,6 @@
 attr:
   class: water
-  name: tap water
+  name: tap-water
   friendly_name: Tap water
   description: Standard tap water suitable for mixing concrete.
 

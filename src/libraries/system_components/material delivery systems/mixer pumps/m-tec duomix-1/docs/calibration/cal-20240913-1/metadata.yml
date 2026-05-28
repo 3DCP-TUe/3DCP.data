@@ -9,7 +9,7 @@ system_component:
   id: m-tec duomix-1
 
 material_component:
-  id: tap water
+  id: tap-water
   supplied_to: m-tec duomix-1
   
 system_layout:

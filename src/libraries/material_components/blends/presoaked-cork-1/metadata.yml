@@ -11,7 +11,7 @@ general_properties:
 
 blend:
   - component:
-      name: tap water
+      name: tap-water
       mass_fraction: confidential
   - component:
       name: cork-500-1000

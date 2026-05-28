@@ -1,6 +1,6 @@
 # Materials
 materials:
-  - name: tap water
+  - name: tap-water
     supplied_to: mai multimix-1
   - name: weber-3d 160-2
     supplied_to: silo-1
