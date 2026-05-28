@@ -12,16 +12,16 @@ general_properties:
 blend:
   - component:
       name: cement-i-42.5-n
-      mass_fraction: 0.219
+      mass_fraction: confidential
   - component:
       name: blast-furnace-slag-1
-      mass_fraction: 0.438
+      mass_fraction: confidential
   - component:
       name: silica-fume-1
-      mass_fraction: 0.073
+      mass_fraction: confidential
   - component:
       name: limestone-powder-1
-      mass_fraction: 0.146
+      mass_fraction: confidential
   - component:
       name: sand-53-500
-      mass_fraction: 0.124
+      mass_fraction: confidential
