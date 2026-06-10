@@ -67,7 +67,7 @@ parts:
   - name: pump head
     type: progressing cavity pump
     manufacturer: Seepex
-    model: MD 0005-24  
+    model: MD 0015-24  
   - name: plc
     type: plc
     manufacturer: Siemens
