@@ -1,0 +1,21 @@
+attr:
+  class: water
+  name: tap-water
+  friendly_name: Tap water
+  description: Standard tap water suitable for mixing concrete.
+
+general_properties:
+  supplier: Local utility
+  state: wet  # dry or wet
+  blend: false
+
+physical_properties:
+  color: clear
+  density: 1000  # kg/m³
+  bulk_density: 1000  # kg/m³
+
+chemical_properties:
+  pH: unknown  # typical range: 6.5–8.5
+  chloride_content: unknown  # must be < 0.5 g/L
+  sulfate_content: unknown   # must be < 1.0 g/L
+  total_dissolved_solids: unknown  # must be < 2000 mg/L

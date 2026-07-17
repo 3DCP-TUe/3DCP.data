@@ -1,0 +1,70 @@
+attributes:
+  id: cal-20260416-1
+  date: 2026-04-16
+
+operators:
+  - name: Arjen Deetman
+  - name: Karsten Nefs
+
+system_component:
+  id: m-tec duomix-1          # reference ID only
+
+material_component:
+  id: weber-3d 160-2          # reference ID only
+  supplied_to: silo-1
+
+system_layout:
+  - component: silo-1
+    connected_to:
+      - component: m-tec duomix-1
+        inlet: connector for silo
+  - component: m-tec duomix-1
+  - component: dosing screw mtec-p30-1
+    inserted_in: m-tec duomix-1
+
+procedure:
+  description: |
+    The dosing screw of the m-tec mixer pump has a fixed frequency.
+    The calibration was performed by collecting the material directly
+    from the hopper outlet. The collected mass and the runtime of the
+    dosing screw were recorded. Runtime was measured digitally using
+    Node-RED 3DSeeP.
+
+outputs:
+  - filename: data.csv
+    columns:
+    - name: runtime
+      description: Duration of the dosing screw operation
+      unit: s
+    - name: mass
+      description: Material mass collected during runtime
+      unit: g
+    - name: mass_flowrate
+      description: Resulting mean mass flowrate
+      unit: g/s
+
+models:
+  - name: constant-flowrate
+    type: constant
+    output:
+      name: mass_flowrate
+      unit: kg/min
+      mean: 51.32
+      std: 2.156
+  - name: runtime-effect
+    type: linear
+    outputs: 
+      - variable: y
+        name: mass_flowrate
+        unit: kg/min
+    inputs: 
+      - variable: x
+        name: runtime
+        unit: s
+        domain: [2, 15]
+    equation: "y = slope * x + intercept"
+    parameters:
+      slope: -0.0318
+      intercept: 51.6084
+    quality:
+      adjrsquare: -0.039

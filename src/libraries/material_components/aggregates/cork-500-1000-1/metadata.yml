@@ -1,0 +1,20 @@
+attr:
+  class: aggregates
+  name: cork-500-1000-1
+  friendly_name: Cork with particle size 0.5-1 mm
+  description: Cork particle size 0.5-1 mm
+
+general_properties:
+  supplier: Amorim Cork
+  state: dry
+  blend: false
+
+physical_properties:
+  color: dark orange
+  density: 210
+  bulk_density: 120
+  psd:
+    available: true # if true, see file 'psd.csv'
+    d10: 578
+    d50: 858
+    d90: 1220

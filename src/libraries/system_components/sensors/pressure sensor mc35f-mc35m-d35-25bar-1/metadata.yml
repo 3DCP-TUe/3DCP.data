@@ -2,6 +2,7 @@ attr:
   class: sensor
   name: pressure sensor mc35f-mc35m-d35-25bar-1
   description: Mortar pressure sensor. 
+  note: Not in use anymore since July 9, 2026. AKO housing was damaged.
 
 dimensions:
   length: 260

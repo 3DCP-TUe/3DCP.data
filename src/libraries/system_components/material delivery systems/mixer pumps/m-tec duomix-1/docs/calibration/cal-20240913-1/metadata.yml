@@ -1,0 +1,116 @@
+attributes:
+  id: cal-20240913-1
+  date: 2024-09-13
+
+operators:
+  - name: Arjen Deetman
+
+system_component:
+  id: m-tec duomix-1
+
+material_component:
+  id: tap-water
+  supplied_to: m-tec duomix-1
+  
+system_layout:
+  - component: m-tec duomix-1
+
+procedure:
+  description: |
+    The water flow of the m-tec mixer pump can be controlled using a digitally
+    actuated valve. For this calibration, the machine's closed-loop water dosing
+    system was used. The desired volumetric flowrate was set on the machine, and
+    the valve position was recorded after a stabilization period of 30 seconds.
+
+    Water flow was tested at two temperature ranges:
+      - 20 to 22 °C (referred to in the dataset as "21 °C")
+      - 6 to 8 °C (referred to in the dataset as "7 °C")
+
+    These two temperatures were chosen to evaluate the influence of water 
+    temperature on the dosing valve behavior and resulting mass flowrate.
+
+outputs:
+  - filename: data.csv
+    columns:
+      - name: volumetric_flowrate
+        description: Set volumetric flowrate on the machine
+        unit: L/h
+      - name: mass_flowrate
+        description: Mass flowrate converted from volumetric flowrate
+        unit: kg/min
+      - name: valve_position
+        description: Valve opening degree
+        unit: '%'
+      - name: temperature
+        description: Water temperature during measurement
+        unit: °C
+
+models:
+  - name: flowrate-valve-fit-room-temperature
+    type: linear
+    outputs: 
+      - variable: y
+        name: mass_flowrate
+        unit: kg/min
+    inputs: 
+      - variable: x
+        name: valve_position
+        unit: '%'
+        domain: [10, 32]
+    equation: "y = slope * x + intercept"
+    parameters:
+      slope: 0.1893
+      intercept: 0.6600
+    quality:
+      adjrsquare: 0.997
+  - name: flowrate-valve-fit-cold
+    type: linear
+    outputs: 
+      - variable: y
+        name: mass_flowrate
+        unit: kg/min
+    inputs: 
+      - variable: x
+        name: valve_position
+        unit: '%'
+        domain: [10, 32]
+    equation: "y = slope * x + intercept"
+    parameters:
+      slope: 0.1912
+      intercept: 0.6745
+    quality:
+      adjrsquare: 0.996
+  - name: valve-flowrate-fit-room-temperature
+    type: linear
+    outputs: 
+      - variable: y
+        name: valve_position
+        unit: '%'
+    inputs: 
+      - variable: x
+        name: mass_flowrate
+        unit: kg/min
+        domain: [2.5, 6.7]
+    equation: "y = slope * x + intercept"
+    parameters:
+      slope: 5.2677
+      intercept: -3.4159
+    quality:
+      adjrsquare: 0.997
+  - name: valve-flowrate-fit-cold
+    type: linear
+    outputs: 
+      - variable: y
+        name: valve_position
+        unit: '%'
+    inputs: 
+      - variable: x
+        name: mass_flowrate
+        unit: kg/min
+        domain: [2.5, 6.7]
+    equation: "y = slope * x + intercept"
+    parameters:
+      slope: 5.2127
+      intercept: -3.4471
+    quality:
+      adjrsquare: 0.996

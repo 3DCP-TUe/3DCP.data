@@ -1,0 +1,32 @@
+attr:
+  class: blends
+  name: example-blend-1
+  friendly_name: Example blend
+  description: An example of how to define a blend of multiple components.
+  note: The sum of mass fractions of all components must equal 1.0.
+
+general_properties:
+  supplier: Saint-Gobain Weber-Beamix (custom mix)
+  state: dry  # dry or wet
+  blend: true
+
+physical_properties:
+  color: unknown
+  density: unknown
+  bulk_density: unknown
+  psd:
+    available: false # if true, see file 'psd.csv'
+    d10: unknown
+    d50: unknown
+    d90: unknown
+
+blend:
+  - component:
+      name: cement-i-42.5-n-1 # refers to another material component
+      mass_fraction: 0.70 
+  - component:
+      name: limestone-powder-1
+      mass_fraction: 0.22
+  - component:
+      name: silica-fume-1
+      mass_fraction: 0.08

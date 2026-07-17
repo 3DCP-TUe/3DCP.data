@@ -1,0 +1,20 @@
+attr:
+  class: aggregates
+  name: cork-1000-2000-1
+  friendly_name: Cork 1-2 mm
+  description: Cork 1-2 mm
+
+general_properties:
+  supplier: Amorim Cork
+  state: dry
+  blend: false
+
+physical_properties:
+  color: dark orange
+  density: 210
+  bulk_density: 120
+  psd:
+    available: true # if true, see file 'psd.csv'
+    d10: 1116
+    d50: 1615
+    d90: 1878

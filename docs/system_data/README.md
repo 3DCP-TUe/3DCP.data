@@ -31,7 +31,7 @@ For each component, a dedicated folder is created. This folder always contains a
 |   +-- ...
 ```
 
-System components are described using metadata files that define attributes, dimensions, couplings, I/O interfaces, sensors, and logged data. These follow a standardized format, as outlined in the [system components documentation](system_components.md). Material components are also described by metadata files; however, their content and sections differ depending on the nature of the component, as explained in the [material components documentation](system_components.md).
+System components are described using metadata files that define attributes, dimensions, couplings, I/O interfaces, sensors, and logged data. These follow a standardized format, as outlined in the [system components documentation](system_components.md). Material components are also described by metadata files; however, their content and sections differ depending on the nature of the component, as explained in the [material components documentation](material_components.md).
 
 The overall system setup—including material flow, component connections, and configuration—is defined in a dedicated system data metadata file. This file contains structured sections describing materials, motion systems, software, system layout, and I/O configuration. These sections allow the system setup to be fully reconstructed and the relationships between materials, components, and signals to be understood. More details can be found in the [system metadata file documentation](metadata_file.md).
 

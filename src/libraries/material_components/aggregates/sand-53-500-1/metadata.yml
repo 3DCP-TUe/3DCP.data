@@ -1,0 +1,20 @@
+attr:
+  class: aggregates
+  name: sand-53-500-1
+  friendly_name: Sand 53-500 um
+  description: Fine sand 53-500 um
+
+general_properties:
+  supplier: Sibelco
+  state: dry
+  blend: false
+
+physical_properties:
+  color: unknown
+  density: 2570
+  bulk_density: unknown
+  psd:
+    available: true # if true, see file 'psd.csv'
+    d10: 166.6
+    d50: 287.1
+    d90: 368.2

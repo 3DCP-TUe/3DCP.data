@@ -1,0 +1,49 @@
+attr:
+  class: sensor
+  name: pressure sensor mc35f-mc35m-d35-25bar-3
+  description: Mortar pressure sensor. 
+
+dimensions:
+  length: 265
+  volume: 0.223
+  length_before: 110
+  length_after: 155
+
+couplings:
+  inlets:
+    - name: concrete inlet
+      type: system 23.5 female mortar coupling
+      size: 35
+      connection: 1.25" female BSP
+  outlets:
+    - name: concrete outlet
+      type: system 23.5 male mortar coupling
+      size: 35
+      connection: 1.25" female BSP
+
+io:
+  - name: pressure sensor
+    connector: Weipu SP2112/P4
+    type: analog output 4-20 mA active
+    signal_limits: [4, 20]
+    reading_limits: [0, 25]
+    interpolation: linear
+    unit: bar
+
+sensors:
+  - name: pressure sensor
+    type: pressure
+    manufacturer: WIKA
+    model: S-20
+    product_number: 14071239
+    serial_number: 1A02QL5WW3L
+    pressure_range: [0, 25]
+
+parts:
+  - name: pressure sensor housing
+    type: RDM series
+    manufacturer: AKO
+    diameter: DN32
+    material: steel
+    sleeve: rubber
+    transmitting_fluid: glycerin

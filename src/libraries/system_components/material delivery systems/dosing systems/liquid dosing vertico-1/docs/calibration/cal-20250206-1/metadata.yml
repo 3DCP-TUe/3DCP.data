@@ -1,0 +1,125 @@
+attributes:
+  id: cal-20250206-1
+  date: 2025-02-06
+
+operators:
+  - name: Arjen Deetman
+  - name: Carolina Maciel Rangel
+
+system_component:
+  id: liquid dosing vertico-1     # reference ID only
+
+material_component:
+  id: sika-viscocrete-2640-35     # reference ID only
+  supplied_to: dosing tank-1
+
+system_layout:
+  - component: dosing tank-1
+    connected_to:
+    - component: tube 10-l1000-1
+  - component: tube 10-l1000-1
+    connected_to:
+      - component: liquid dosing vertico-1
+  - component: liquid dosing vertico-1
+    connected_to: 
+      - component: tube 6-l1000-2
+  - component: tube 6-l1000-2
+    connected_to: 
+      - component: liquid dosing bronkhorst-1
+        inlet: pump fluid inlet
+  - component: liquid dosing bronkhorst-1
+    connected_to: 
+      - component: tube 6-l1000-3
+  - component: tube 6-l1000-3
+    connected_to: 
+      - component: dosing tank-1
+
+procedure:
+  description: |
+    The liquid dosing system has a variable frequency. The calibration was
+    performed by operating the system in open-loop mode, controlled by the
+    input RPM of the pump. The mass flow rate was measured using the Coriolis
+    meter of system component 'liquid dosing bronkhorst-1' and the integrated
+    ultrasonic flow sensor from Keyence.
+
+    After the pump reached a stable mass flow, the mass flow rate was recorded
+    along with the corresponding pump frequency (RPM). Additionally, the
+    Coriolis meter registered a material density of 1076 kg/m3 at room
+    temperature.
+
+outputs:
+  - filename: data.csv
+    columns:
+      - name: frequency
+        description: Set pump frequency
+        unit: rpm
+      - name: mass_flowrate_coriolis
+        description: Mean mass flow rate measured with the Coriolis meter
+        unit: g/min
+      - name: volume_flowrate_coriolis
+        description: Mean volume flow rate measured with the Coriolis meter
+        unit: ml/min
+      - name: volume_flowrate_ultrasonic
+        description: Mean volume flow rate measured with the integrated ultrasonic flow sensor
+        unit: ml/min
+
+models:
+  - name: flowrate-frequency-fit
+    type: linear
+    outputs: 
+      - variable: y
+        name: mass_flowrate_coriolis
+        unit: g/min
+    inputs: 
+      - variable: x
+        name: frequency
+        domain: [200, 1400]
+        unit: rpm
+    equation: "y = slope * x + intercept"
+    parameters:
+      slope: 0.0522
+      intercept: 0.0858
+    quality:
+      adjrsquare: 1.00
+
+# Sensor metadata is copied from the component definition.
+# These entries record the exact sensor configuration used during calibration.
+sensor:
+  - name: coriolis sensor
+    type: coriolis
+    manufacturer: Bronkhorst
+    model: MI140-VAD-22-0-S-DA-000 
+    product_series: Industrial mini CORI-FLOW 
+    material: SS 316L
+    flow_range: [5, 500] # g/min
+    medium: liquid
+  - name: clamp-on flow sensor
+    type: ultrasonic flow sensor
+    manufacturer: KEYENCE International
+    sensor_model: FD-XS8
+    controller_model: FD-XA1
+    clamp_set: 
+      model: FD-XC8R1
+      pipe_material: plastic
+      pipe_size: 6
+    settings:
+      basic:
+        output1_mode: standard
+        output1_logic: N.O.
+        output2_mode: standard
+        output2_logic: N.O.
+        analog_output_current: [4, 20] # mA
+        analog_output_scaling: [0, 100] # ml/min
+        input1_function: off
+        input2_function: off
+        response_time: 1 # s
+        integrated_flow)unit: 1 # ml
+      advanced:
+        flow_resolution: 1 # ml/min
+        shot_resolution: 0.01 # ml
+        disp_average: 1 # seconds
+        hys_value: 20 # ml/min
+        zero_cut_flow: 5 # ml/min
+        pipe_size: 6
+        flow_tuning:
+          adjust_span: 0.92

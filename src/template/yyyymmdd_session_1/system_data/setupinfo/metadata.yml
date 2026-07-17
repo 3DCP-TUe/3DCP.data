@@ -1,6 +1,6 @@
 # Materials
 materials:
-  - name: tap water
+  - name: tap-water
     supplied_to: mai multimix-1
   - name: weber-3d 160-2
     supplied_to: silo-1
@@ -54,8 +54,8 @@ system_layout:
       - component: hose mc35f-mc35m-d35-l1000-1
   - component: hose mc35f-mc35m-d35-l1000-1
     connected_to:
-      - component: pressure sensor mc35f-mc35m-d35-25bar-1
-  - component: pressure sensor mc35f-mc35m-d35-25bar-1
+      - component: pressure sensor mc35f-mc35m-d35-25bar-3
+  - component: pressure sensor mc35f-mc35m-d35-25bar-3
     connected_to:
       - component: adapter mc35f-fl40-1
   - component: adapter mc35f-fl40-1
@@ -102,7 +102,7 @@ io_configuration:
   - component: material delivery plc
     channels:
       - name: AI0
-        component: pressure sensor mc35f-mc35m-d35-25bar-1
+        component: pressure sensor mc35f-mc35m-d35-25bar-3
         channel: pressure sensor
       - name: AI1 
         component: pressure sensor mc35f-mc35m-d35-25bar-2
