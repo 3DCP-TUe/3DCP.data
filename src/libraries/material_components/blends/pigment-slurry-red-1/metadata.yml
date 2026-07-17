@@ -10,6 +10,11 @@ general_properties:
   state: wet  # dry or wet
   blend: true
 
+physical_properties:
+  color: unknown
+  density: unknown
+  bulk_density: unknown
+
 blend:
   - component:
       name: tap-water  # refers to another material component

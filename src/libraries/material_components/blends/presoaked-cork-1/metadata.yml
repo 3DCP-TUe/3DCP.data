@@ -9,16 +9,18 @@ general_properties:
   state: wet  # dry or wet
   blend: true
 
+physical_properties:
+  color: unknown
+  density: unknown
+  bulk_density: unknown
+
 blend:
   - component:
+      name: cork-500-1000-1
+      mass_fraction: 0.3125
+  - component:
+      name: cork-1000-2000-1
+      mass_fraction: 0.1875
+  - component:
       name: tap-water
-      mass_fraction: confidential
-  - component:
-      name: cork-500-1000
-      mass_fraction: confidential
-  - component:
-      name: cork-1000-2000
-      mass_fraction: confidential
-  - component:
-      name: cork-2000-4000
-      mass_fraction: confidential
+      mass_fraction: 0.5

@@ -9,6 +9,11 @@ general_properties:
   state: wet  # dry or wet
   blend: false
 
+physical_properties:
+  color: clear
+  density: 1000  # kg/m³
+  bulk_density: 1000  # kg/m³
+
 chemical_properties:
   pH: unknown  # typical range: 6.5–8.5
   chloride_content: unknown  # must be < 0.5 g/L

@@ -12,4 +12,5 @@ general_properties:
 
 physical_properties:
   color: unknown
-  density: unknown
+  density: 1070
+  bulk_density: 1070

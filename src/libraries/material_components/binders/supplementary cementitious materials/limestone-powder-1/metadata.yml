@@ -7,12 +7,16 @@ attr:
   note: Typically used to improve workability and reduce cement content.
 
 general_properties:
-  supplier: unknown
+  supplier: Inducal
   state: dry # dry or wet
   blend: false
 
 physical_properties:
   color: unknown
-  density: unknown
+  density: 2600
   bulk_density: unknown
-  particle_size: unknown
+  psd:
+    available: true # if true, see file 'psd.csv'
+    d10: 1.5
+    d50: 17.1
+    d90: 95.0

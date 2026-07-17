@@ -12,6 +12,10 @@ general_properties:
 
 physical_properties:
   color: unknown
-  density: unknown
+  density: 2160
   bulk_density: unknown
-  particle_size: unknown
+  psd:
+    available: true # if true, see file 'psd.csv'
+    d10: 0.047
+    d50: 0.181
+    d90: 0.622

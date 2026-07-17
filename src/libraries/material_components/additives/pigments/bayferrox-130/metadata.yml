@@ -9,3 +9,13 @@ general_properties:
   supplier: LANXESS Deutschland GmbH
   state: dry
   blend: false
+
+physical_properties:
+  color: unknown
+  density: unknown
+  bulk_density: unknown
+  psd:
+    available: false # if true, see file 'psd.csv'
+    d10: unknown
+    d50: unknown
+    d90: unknown

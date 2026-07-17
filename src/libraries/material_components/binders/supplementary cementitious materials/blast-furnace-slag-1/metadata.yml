@@ -6,12 +6,16 @@ attr:
   description: -
 
 general_properties:
-  supplier: unknown
+  supplier: Eco-CEM
   state: dry # dry or wet
   blend: false
 
 physical_properties:
   color: unknown
-  density: unknown
+  density: 2830
   bulk_density: unknown
-  particle_size: unknown
+  psd:
+    available: true # if true, see file 'psd.csv'
+    d10: 4.4
+    d50: 16.6
+    d90: 33.1
