@@ -1,0 +1,50 @@
+attributes:
+  id: cal-20260731-1
+  date: 2026-07-30
+
+operators:
+  - name: Arjen Deetman
+  - name: Operator from Equipment and Protype Center TU/e
+
+system_component:
+  id: pressure sensor mc35f-mc35m-d35-25bar-2
+
+material_component:
+  id: tap-water
+  supplied_to: pressure sensor mc35f-mc35m-d35-25bar-2
+
+system_layout:
+  - component: pressure sensor mc35f-mc35m-d35-25bar-2
+
+procedure:
+  description: |
+    The pressure measurement system, consisting of a WIKA digital pressure
+    sensor and an AKO housing equipped with an inline diaphragm seal, was
+    calibrated by Arjen Deetman in collaboration with an operator from the
+    Equipment & Prototype Center (TU/e).
+
+    The assembly was closed at both ends. A reference WIKA pressure sensor
+    was connected to one end, while a manual hydraulic pressure pump was
+    connected to the other. The hydraulic setup included a cylinder acting
+    as a barrier between the hydraulic oil and the water used as the
+    calibration medium. The sensor assembly was completely filled with
+    water to prevent the presence of air.
+
+    Three calibration cycles were performed, during which the pressure was
+    gradually increased up to the maximum allowable operating pressure and
+    subsequently released. Pressure readings from both sensors were
+    recorded throughout the test. All measurement data were acquired
+    digitally using the Node-RED 3DSeeP data acquisition system.
+
+outputs:
+  - filename: data.csv
+    columns:
+      - name: time
+        description: Clock time
+        unit: HH.mm.ss.SSS
+      - name: pressure_direct
+        description: Direct pressure measurement
+        unit: bar
+      - name: pressure_seal
+        description: Pressure measurement via in-line diapghragm seal
+        unit: bar
