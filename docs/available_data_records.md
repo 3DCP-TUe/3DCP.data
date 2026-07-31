@@ -36,3 +36,10 @@ A detailed description of the data per session is provided below.
 
 ---
 
+[**#4 Data from 3D printing functionally graded wall elements using lightweight concrete**](https://doi.org/10.5281/zenodo.17192707)
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17192707.svg)](https://doi.org/10.5281/zenodo.17192707)
+
+This dataset contains measurements from a 3D concrete printing session in which several wall elements were produced sequentially and without interruption, with varying material densities by altering the cork content. The study investigates an alternative approach to local composition control by adjusting the material composition directly at the mixing pump, rather than at the printhead. To achieve this, additional dosing systems were integrated with the mixing pump to supply cork and other material components separately. Prior to printing the wall elements, tracer experiments were conducted to evaluate the material–system response to changes in cork content. The dataset includes results from these tracer experiments, together with in-line process measurements such as pressure, temperature, and other operational parameters recorded throughout the session.
+
+---
