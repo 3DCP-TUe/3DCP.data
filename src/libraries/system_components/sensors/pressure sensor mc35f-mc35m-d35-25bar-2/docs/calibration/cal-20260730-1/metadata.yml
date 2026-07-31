@@ -1,5 +1,5 @@
 attributes:
-  id: cal-20260731-1
+  id: cal-20260730-1
   date: 2026-07-30
 
 operators:
@@ -7,14 +7,14 @@ operators:
   - name: Operator from Equipment and Protype Center TU/e
 
 system_component:
-  id: pressure sensor mc35f-mc35m-d35-10bar-1
+  id: pressure sensor mc35f-mc35m-d35-25bar-2
 
 material_component:
   id: tap-water
-  supplied_to: pressure sensor mc35f-mc35m-d35-10bar-1
+  supplied_to: pressure sensor mc35f-mc35m-d35-25bar-2
 
 system_layout:
-  - component: pressure sensor mc35f-mc35m-d35-10bar-1
+  - component: pressure sensor mc35f-mc35m-d35-25bar-2
 
 procedure:
   description: |
