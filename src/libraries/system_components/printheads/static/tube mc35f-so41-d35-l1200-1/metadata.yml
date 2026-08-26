@@ -1,0 +1,33 @@
+attr:
+  class: printheads
+  subclass: static
+  name: tube mc35f-so41-d35-l1200-1
+  description: Sraight steel pipe with female mortar coupling.
+
+dimensions:
+  length: 1213
+  volume: 1.167
+
+couplings:
+  inlets:
+    - name: concrete inlet
+      type: system 23.5 female mortar coupling
+      size: 35
+      connection: 1.25" female BSP
+  outlets:
+    - name: concrete outlet
+      type: slip-on
+      outer_diameter: 41
+      inner_diameter: 35
+
+parts:
+  - name: mortar coupling inlet
+    type: system 23.5 female mortar coupling
+    size: 35
+    connection: 1.25" female BSP
+  - name: pipe
+    type: seamless pipe
+    material: steel
+    outer_diameter: 41
+    inner_diameter: 35
+    wall_thickness: 3
