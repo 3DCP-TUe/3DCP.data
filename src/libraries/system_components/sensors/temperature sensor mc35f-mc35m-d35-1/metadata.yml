@@ -1,0 +1,53 @@
+attr:
+  class: sensor
+  name: temperature sensor mc35f-mc35m-d35-1
+  description: Mortar temperature sensor. 
+  
+dimensions:
+  length: 203
+  volume: 0.195
+
+couplings:
+  inlets:
+    - name: concrete inlet
+      type: system 23.5 female mortar coupling
+      size: 35
+      connection: 1.25" female BSP
+  outlets:
+    - name: concrete outlet
+      type: system 23.5 male mortar coupling
+      size: 35
+      connection: 1.25" female BSP
+
+io:
+  - name: temperature sensor
+    connector: Weipu SP2112/P4
+    type: analog output 4-20 mA active
+    signal_limits: [4, 20]
+    reading_limits: [-50, 150]
+    interpolation: linear
+    unit: degree Celsius
+
+sensors:
+  - name: temperature sensor
+    type: temperature
+    manufacturer: ifm electronic
+    model: TA2105
+    product_number: TA-025CLER14-A-ZVG/US
+    temperature_range: [-50, 150]
+
+parts:
+  - name: mortar coupling inlet
+    type: system 23.5 female mortar coupling
+    size: 35
+    connection: 1.25" female BSP
+  - name: mortar coupling inlet
+    type: system 23.5 male mortar coupling
+    size: 35
+    connection: 1.25" female BSP
+  - name: pipe
+    type: seamless pipe
+    material: steel
+    outer_diameter: 41
+    inner_diameter: 35
+    wall_thickness: 3
