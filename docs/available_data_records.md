@@ -14,7 +14,7 @@ This dataset contains measurements collected from tracer experiments conducted o
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16837345.svg)](https://doi.org/10.5281/zenodo.16837345)
 
-Dataset that contains the data and scripts that were used in the publication: "Correlating in-line sensor data to hardened state material properties in Digital Fabrication with Concrete". It includes data obtained from in-line sensors, the slugs test, as well as data from uniaxial compression tests that were performed at material ages of 15 minutes to 28 days.
+Dataset that contains the data and scripts that were used in the publication: ["Correlating in-line sensor data to hardened state material properties in Digital Fabrication with Concrete"](https://doi.org/10.1007/978-3-032-14652-6_3). It includes data obtained from in-line sensors, the slugs test, as well as data from uniaxial compression tests that were performed at material ages of 15 minutes to 28 days.
 
 ---
 
@@ -22,7 +22,7 @@ Dataset that contains the data and scripts that were used in the publication: "C
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17192626.svg)](https://doi.org/10.5281/zenodo.17192626)
 
-This dataset contains the experimental data used in the paper entitled “Characterization of early‑age elastic–plastic properties of 3D printed materials using indentation testing.” The data was collected across three concrete printing sessions, during which a printable mortar was sampled directly from the printing system and subsequently characterized. The dataset includes both in‑line process measurements and results from the off‑line mechanical tests used to determine the early‑age elastic-plastic properties of the material.
+This dataset contains the experimental data used in the paper entitled [“Characterization of early‑age elastic–plastic properties of 3D printed materials using indentation testing”](https://doi.org/10.1016/j.ijmecsci.2025.111141). The data was collected across three concrete printing sessions, during which a printable mortar was sampled directly from the printing system and subsequently characterized. The dataset includes both in‑line process measurements and results from the off‑line mechanical tests used to determine the early‑age elastic-plastic properties of the material.
 
 Across all three printing sessions, flat punch indentation tests were conducted on hemispherical samples to derive the elastic modulus, cohesion, and internal friction angle of the printable material. Besides, during two sessions, unconfined compression tests were conducted on cylindrical specimens to validate the developed indentation test. As a quality‑control measure, ultrasonic wave transmission tests were carried out during all printing sessions. 
 
@@ -41,5 +41,19 @@ A detailed description of the data per session is provided below.
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17192707.svg)](https://doi.org/10.5281/zenodo.17192707)
 
 This dataset contains measurements from a 3D concrete printing session in which several wall elements were produced sequentially and without interruption, with varying material densities by altering the cork content. The study investigates an alternative approach to local composition control by adjusting the material composition directly at the mixing pump, rather than at the printhead. To achieve this, additional dosing systems were integrated with the mixing pump to supply cork and other material components separately. Prior to printing the wall elements, tracer experiments were conducted to evaluate the material–system response to changes in cork content. The dataset includes results from these tracer experiments, together with in-line process measurements such as pressure, temperature, and other operational parameters recorded throughout the session.
+
+---
+
+[**#5 Data for "From on-line to in-line quality control of the bulk yield stress for digitally fabricated concrete"**](https://doi.org/10.5281/zenodo.17854885)
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17854885.svg)](https://doi.org/10.5281/zenodo.17854885)
+
+This dataset contains the experimental data used in the paper entitled ["From on-line to in-line quality control of the bulk yield stress for digitally fabricated concrete"](https://doi.org/10.1016/j.cemconres.2026.108382). The data was collected during three concrete printing sessions and was used to evaluate the capability of various in-line measurements to predict the bulk yield stress of fresh concrete at the time of deposition.
+
+The dataset includes measurements from multiple in-line sensors positioned throughout the production process. Parallel to these in-line measurements, on-line measurements of the bulk yield stress were obtained using the slugs test.
+
+**Session 1:** This session contains data obtained while varying the pump rotational frequency at a constant water-to-solids ratio. 
+
+**Session 2 and 3:** These sessions contain data obtained at a constant pump rotational frequency while varying the water-to-solids ratio.
 
 ---
